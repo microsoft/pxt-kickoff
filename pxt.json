@@ -1,0 +1,47 @@
+{
+    "name": "pxt-kickoff",
+    "version": "1.2.1",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "animation": "*",
+        "Color Fading": "github:jwunderl/pxt-color#v0.0.30"
+    },
+    "files": [
+        "README.md",
+        "textUtil.ts",
+        "const.ts",
+        "ui.ts",
+        "player.ts",
+        "field.ts",
+        "team.ts",
+        "ball.ts",
+        "clock.ts",
+        "game.ts",
+        "teamdata.ts",
+        "util.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "palette": [
+        "#000000",
+        "#FFFFFF",
+        "#FF2121",
+        "#FFF609",
+        "#FF93C4",
+        "#249CA3",
+        "#57BB31",
+        "#FF8135",
+        "#E5CDC4",
+        "#A4839F",
+        "#5C406C",
+        "#FF3C00",
+        "#311D00",
+        "#002244",
+        "#69BE28",
+        "#000000"
+    ],
+    "public": false,
+    "preferredEditor": "tsprj"
+}

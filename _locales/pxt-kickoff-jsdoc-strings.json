@@ -1,0 +1,10 @@
+{
+  "football": "A customizable football game for MakeCode Arcade\nChoose your favorite teams and play!",
+  "football.createGame": "Play a game of football against the AI!",
+  "football.createGame|param|aiTeam": "the team the player will play against, eg league.pittsburghSteelers",
+  "football.createGame|param|playerTeam": "the team the player will play as, eg league.clevelandBrowns",
+  "football.createGame|param|quarterLength": "the length of a quarter, eg 20",
+  "football.setHardMode": "Set hard mode on or off!\nIn hardmode, some game features change:\n* * Going over the sidelines ends the play\n* The opposing team has more endurance while holding the ball\n* The football flies faster",
+  "football.setTeamAlternateColors": "Set whether the given team should use their normal colors\nor their alternate (inverted) colors.",
+  "football.startGame": "Prompt the player and start the game!"
+}
