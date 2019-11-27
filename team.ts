@@ -34,10 +34,16 @@ class Team {
 
     setTeamColors(alternate: boolean) {
         // set color to team colors on creation
-        const teamPalette = new color.Palette(2);
-        teamPalette.setColor(alternate ? 1 : 0, this.teamData.colorOne);
-        teamPalette.setColor(alternate ? 0 : 1, this.teamData.colorTwo);
-        color.setPalette(teamPalette, this.primaryColor, 2);
+        const buf = color.ColorBuffer.fromBuffer(hex`__palette`, color.ColorBufferLayout.RGB)
+        buf.setColor(
+            this.primaryColor,
+            alternate ? this.teamData.colorTwo : this.teamData.colorOne
+        );
+        buf.setColor(
+            this.primaryColor + 1,
+            alternate ? this.teamData.colorOne : this.teamData.colorTwo
+        );
+        palette.setColors(buf);
     }
 
     quarterBack(): {qb: Sprite, qbAnimation: Image[]} {
