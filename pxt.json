@@ -1,11 +1,12 @@
 {
     "name": "pxt-kickoff",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "",
     "dependencies": {
         "device": "*",
         "animation": "*",
-        "Color Fading": "github:jwunderl/pxt-color#v0.0.30"
+        "color": "*",
+        "palette": "*"
     },
     "files": [
         "README.md",
