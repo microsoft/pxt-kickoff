@@ -26,6 +26,11 @@
     "testFiles": [
         "test.ts"
     ],
+    "public": false,
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "tsprj",
     "palette": [
         "#000000",
         "#FFFFFF",
@@ -43,7 +48,5 @@
         "#002244",
         "#69BE28",
         "#000000"
-    ],
-    "public": false,
-    "preferredEditor": "tsprj"
+    ]
 }
