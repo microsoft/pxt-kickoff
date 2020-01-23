@@ -31,11 +31,15 @@
     <script type="text/javascript" src="./assets/js/loader.js?v={{ site.github.build_revision }}"></script>
     <style>
         body {
-            background: transparent;
+            background: black;
             color: white;
             font-family: monospace;
             overflow: hidden;
             font-size: 14pt;
+        }
+
+        .embed {
+            background: transparent;
         }
 
         iframe {
@@ -43,8 +47,12 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: calc(100% - 1.5em);
             border: none;
+        }
+
+        .nofooter iframe {
+            height: 100%;
         }
 
         footer {
@@ -62,7 +70,12 @@
         footer a {
             color: grey;
         }
-        
+
+        .embed footer,
+        .embed footer a {
+            color: black;
+        }
+
         #fullscreen {
             position: absolute;
             right: 0.25rem;
@@ -140,7 +153,27 @@
     <iframe id="simframe" allowfullscreen="allowfullscreen"
         sandbox="allow-popups allow-forms allow-scripts allow-same-origin">
     </iframe>
-    <script type="text/javascript">makeCodeRun({ js: "./assets/js/binary.js?v={{ site.github.build_revision }}" })</script>
+    <script type="text/javascript">
+        makeCodeRun({ js: "./assets/js/binary.js?v={{ site.github.build_revision }}" });
+
+        if (window.location && window.location.search) {
+            var noFooter = /nofooter=1/i.test(window.location.search);
+            var embed = /embed=1/i.test(window.location.search);
+            var root = document.querySelector("#root");
+
+            if (noFooter) {
+                var footer = document.querySelector("#footer");
+                if (root)
+                    root.className += " nofooter";
+                if (footer)
+                    footer.remove();
+            }
+
+            if (embed && root) {
+                root.className += " embed";
+            }
+        }
+    </script>
 </body>
 
 </html>
