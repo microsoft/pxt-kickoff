@@ -267,7 +267,11 @@ namespace football {
                 this.defense.players
                     .filter(p => p != this.defense.activePlayer)
                     .forEach((player, ind) => {
-                        player.follow(this.offense.players[ind], 100);
+                        player.follow(
+                            this.offense.players[ind],
+                            this.defense.isPlayerControlled() ? 100 : 80,
+                            80
+                        );
                     });
             } else {
                 // clear any follows

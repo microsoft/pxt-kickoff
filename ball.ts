@@ -76,7 +76,6 @@ namespace ball {
         target.z = zindex.THROW_TARGET;
         controller.moveSprite(target, 0, 0);
 
-        // TODO: qb animation here
         animation.runImageAnimation(qb, qbAnimation, 150);
         util.focusCamera(shadow);
         // hard coded to match animation portion with ball
@@ -145,7 +144,7 @@ namespace ball {
         ], 30, true);
         
         // TODO?: make it so user can control speed / control with timing?
-        const maxSpeed = football.hardMode() ? 120 : 80;
+        const maxSpeed = football.hardMode() ? 120 : 75;
         const speed = Math.randomRange(maxSpeed >> 1, maxSpeed);
         ballOffsetMagnitude = Math.max(((maxSpeed * 1.4) - speed) >> 1, 10);
         const diffY = target.y - shadow.y;
