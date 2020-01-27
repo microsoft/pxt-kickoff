@@ -28,13 +28,9 @@ class Team {
         for (let i = 0; i < 3; i++) {
             this.players[i] = player.create(this);
         }
-
-        this.setTeamColors(false);
     }
 
-    setTeamColors(alternate: boolean) {
-        // set color to team colors on creation
-        const buf = color.ColorBuffer.fromBuffer(hex`__palette`, color.ColorBufferLayout.RGB)
+    setTeamColors(alternate: boolean, buf: color.ColorBuffer) {
         buf.setColor(
             this.primaryColor,
             alternate ? this.teamData.colorTwo : this.teamData.colorOne

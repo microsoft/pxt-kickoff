@@ -5,7 +5,7 @@
 //% weight=100 color="#003399" icon="\uf091"
 namespace football {
     let _hardMode: boolean;
-    let _alternateColors: boolean[];
+    let _alternateColors: boolean[] = [false, false];
     export class Game {
         public clock: GameClock;
 
@@ -18,6 +18,7 @@ namespace football {
         protected scoreboard: scene.Renderable;
         protected lineOfScrimmageIndicator: scene.Renderable;
         protected aiOn: boolean;
+        public palette: color.ColorBuffer;
 
         constructor(
             protected teamA: Team,
@@ -42,14 +43,13 @@ namespace football {
             this.resetPlayerPositions();
             this.downs = 0;
 
+            this.palette = palette.defaultPalette();
             this.refreshColors();
         }
 
         refreshColors() {
-            if (_alternateColors) {
-                this.teamA.setTeamColors(_alternateColors[TeamId.Player]);
-                this.teamB.setTeamColors(_alternateColors[TeamId.Computer]);
-            }
+            this.teamA.setTeamColors(_alternateColors[TeamId.Player], this.palette);
+            this.teamB.setTeamColors(_alternateColors[TeamId.Computer], this.palette);
         }
 
         get playerWhoHasBall() {
@@ -380,9 +380,6 @@ namespace football {
     //% on.defl="true"
     //% weight=60
     export function setTeamAlternateColors(id: TeamId, on: boolean) {
-        if (!_alternateColors) {
-            _alternateColors = [false, false];
-        }
         _alternateColors[id] = on;
 
         if (currentGame) {
