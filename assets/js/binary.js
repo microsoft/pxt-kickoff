@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v0.16.21/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.6","target":"arcade","targetVersion":"0.16.21"}
-// total=1995119 new=18.74% cached=76.05% other=5.20%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v0.16.21/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.7","target":"arcade","targetVersion":"0.16.21"}
+// total=1996274 new=18.79% cached=76.01% other=5.20%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -550,7 +550,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P24652(s) {
+function _main___P44475(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -978,7 +978,7 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_Array__push(s.tmp_0, false);
     r0 = pxsim_Array__push(s.tmp_0, false);
-    globals._alternateColors___5794 = (s.tmp_0);
+    globals._alternateColors___39416 = (s.tmp_0);
     r0 = pxsim_pxtcore_mkClassInstance(TeamData__C4744_VT);
     s.tmp_0 = r0;
     s.tmp_1 = TeamData_constructor__P6350_mk(s);
@@ -1003,7 +1003,7 @@ switch (step) {
   case 43:
     r0 = s.retval;
     globals.pittsburghSteelers___6431 = (s.tmp_0);
-    s.tmp_0 = football_createGame__P6267_mk(s);
+    s.tmp_0 = football_createGame__P39437_mk(s);
     s.tmp_0.arg0 = globals.clevelandBrowns___6374;
     s.tmp_0.arg1 = globals.pittsburghSteelers___6431;
     s.tmp_0.arg2 = 20;
@@ -1014,14 +1014,14 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P24652.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"test.ts","functionName":"<main>","argumentNames":[]}
-_main___P24652.continuations = [  ]
-_main___P24652.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"test.ts","functionName":"<main>","argumentNames":[]}
+_main___P44475.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"test.ts","functionName":"<main>","argumentNames":[]}
+_main___P44475.continuations = [  ]
+_main___P44475.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"test.ts","functionName":"<main>","argumentNames":[]}
 
-function _main___P24652_mk(s) {
+function _main___P44475_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P24652, depth: s.depth + 1,
+        parent: s, fn: _main___P44475, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1812,7 +1812,7 @@ function TeamData_constructor__P6350_mk(s) {
 
 
 
-function football_createGame__P6267(s) {
+function football_createGame__P39437(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1828,7 +1828,7 @@ switch (step) {
       s.arg2 = (s.lambdaArgs[2]);
       s.lambdaArgs = null;
     }
-    r0 = pxsim_numops_toBoolDecr(globals.currentGame___6266);
+    r0 = pxsim_numops_toBoolDecr(globals.currentGame___39436);
     if (!r0) { step = 1; continue; }
     s.tmp_0 = game_splash__P1211_mk(s);
     s.tmp_0.arg0 = "Game already created!";
@@ -1838,9 +1838,9 @@ switch (step) {
     r0 = s.retval;
     { step = 2; continue; }
   case 1:
-    r0 = pxsim_pxtcore_mkClassInstance(football_Game__C4143_VT);
+    r0 = pxsim_pxtcore_mkClassInstance(football_Game__C39417_VT);
     s.tmp_0 = r0;
-    s.tmp_1 = football_Game_constructor__P5796_mk(s);
+    s.tmp_1 = football_Game_constructor__P39435_mk(s);
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_2 = teams_create__P5189_mk(s);
     s.tmp_2.arg0 = s.arg0;
@@ -1860,20 +1860,20 @@ switch (step) {
     s.pc = 4; return s.tmp_1;
   case 4:
     r0 = s.retval;
-    globals.currentGame___6266 = (s.tmp_0);
-    r0 = pxsim.control.runInParallel(football_startGame__P6285);
+    globals.currentGame___39436 = (s.tmp_0);
+    r0 = pxsim.control.runInParallel(football_startGame__P39439);
   case 2:
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-football_createGame__P6267.info = {"start":10518,"length":417,"line":298,"column":4,"endLine":309,"endColumn":5,"fileName":"game.ts","functionName":"createGame","argumentNames":["playerTeam","aiTeam","quarterLength"]}
-football_createGame__P6267.info = {"start":10518,"length":417,"line":298,"column":4,"endLine":309,"endColumn":5,"fileName":"game.ts","functionName":"createGame","argumentNames":["playerTeam","aiTeam","quarterLength"]}
+football_createGame__P39437.info = {"start":10673,"length":417,"line":302,"column":4,"endLine":313,"endColumn":5,"fileName":"game.ts","functionName":"createGame","argumentNames":["playerTeam","aiTeam","quarterLength"]}
+football_createGame__P39437.info = {"start":10673,"length":417,"line":302,"column":4,"endLine":313,"endColumn":5,"fileName":"game.ts","functionName":"createGame","argumentNames":["playerTeam","aiTeam","quarterLength"]}
 
-function football_createGame__P6267_mk(s) {
+function football_createGame__P39437_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_createGame__P6267, depth: s.depth + 1,
+        parent: s, fn: football_createGame__P39437, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1888,7 +1888,7 @@ function football_createGame__P6267_mk(s) {
 
 
 
-function football_startGame__P6285(s) {
+function football_startGame__P39439(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1898,20 +1898,20 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0)) return null;
 switch (step) {
   case 0:
 
-    s.isHardware___6298 = undefined;
+    s.isHardware___39472 = undefined;
     s.tmp_0 = game_setDialogCursor__P1208_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex6289);
+    r0 = pxsim.image.ofBuffer(_hex39463);
     s.tmp_0.arg0 = r0;
     s.pc = 5; return s.tmp_0;
   case 5:
     r0 = s.retval;
     s.tmp_0 = game_setDialogFrame__P1207_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex6292);
+    r0 = pxsim.image.ofBuffer(_hex39466);
     s.tmp_0.arg0 = r0;
     s.pc = 6; return s.tmp_0;
   case 6:
     r0 = s.retval;
-    r0 = pxsim_numops_toBoolDecr(globals.currentGame___6266);
+    r0 = pxsim_numops_toBoolDecr(globals.currentGame___39436);
     if (!r0) { step = 3; continue; }
     s.tmp_0 = controller_Button_onEvent__P666_mk(s);
     s.tmp_0.arg0 = globals.menu___644;
@@ -1921,18 +1921,18 @@ switch (step) {
   case 7:
     r0 = s.retval;
     s.tmp_0 = lambda_1_mk(s);
-    s.tmp_0.argL = inline__P6301;
+    s.tmp_0.argL = inline__P39475;
     setupLambda(s.tmp_0, s.tmp_0.argL);
     s.pc = 8; return s.tmp_0;
   case 8:
     r0 = s.retval;
-    s.isHardware___6298 = (r0);
+    s.isHardware___39472 = (r0);
     s.tmp_0 = game_onGameOver__P1242_mk(s);
-    s.tmp_0.arg0 = inline__P6309;
+    s.tmp_0.arg0 = inline__P39483;
     s.pc = 9; return s.tmp_0;
   case 9:
     r0 = s.retval;
-    r0 = pxsim_numops_toBoolDecr(s.isHardware___6298);
+    r0 = pxsim_numops_toBoolDecr(s.isHardware___39472);
     if (!r0) { step = 1; continue; }
     r0 = "Press A";
     { step = 2; continue; }
@@ -1958,8 +1958,8 @@ switch (step) {
     s.pc = 10; return s.tmp_1;
   case 10:
     r0 = s.retval;
-    s.tmp_0 = football_Game_startPlay__P4153_mk(s);
-    s.tmp_0.arg0 = globals.currentGame___6266;
+    s.tmp_0 = football_Game_startPlay__P39427_mk(s);
+    s.tmp_0.arg0 = globals.currentGame___39436;
     s.pc = 12; return s.tmp_0;
   case 12:
     r0 = s.retval;
@@ -1976,28 +1976,28 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-football_startGame__P6285.info = {"start":11072,"length":1926,"line":318,"column":4,"endLine":372,"endColumn":5,"fileName":"game.ts","functionName":"startGame","argumentNames":[]}
-football_startGame__P6285.info = {"start":11072,"length":1926,"line":318,"column":4,"endLine":372,"endColumn":5,"fileName":"game.ts","functionName":"startGame","argumentNames":[]}
+football_startGame__P39439.info = {"start":11227,"length":1926,"line":322,"column":4,"endLine":376,"endColumn":5,"fileName":"game.ts","functionName":"startGame","argumentNames":[]}
+football_startGame__P39439.info = {"start":11227,"length":1926,"line":322,"column":4,"endLine":376,"endColumn":5,"fileName":"game.ts","functionName":"startGame","argumentNames":[]}
 
-function football_startGame__P6285_mk(s) {
+function football_startGame__P39439_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_startGame__P6285, depth: s.depth + 1,
+        parent: s, fn: football_startGame__P39439, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
   tmp_3: undefined,
-  isHardware___6298: undefined,
+  isHardware___39472: undefined,
 } }
 
-const _hex6289 = pxsim.BufferMethods.createBufferFromHex("87040b000b000000009099a90a00000090898899a900000090888898990a000089f8ffff980a0000898ff888990a0000898ff888990a0000898ff888990a000089f8ffff980a000090888898990a000090898899a9000000009099a90a000000")
-const _hex6292 = pxsim.BufferMethods.createBufferFromHex("87040c000c00000000000000000000000099999999000000909999999989000090a911119a890000901911119189000090191111918900009019111191890000901911119189000090a911119a890000909999999989000000999999998800000088888888080000")
+const _hex39463 = pxsim.BufferMethods.createBufferFromHex("87040b000b000000009099a90a00000090898899a900000090888898990a000089f8ffff980a0000898ff888990a0000898ff888990a0000898ff888990a000089f8ffff980a000090888898990a000090898899a9000000009099a90a000000")
+const _hex39466 = pxsim.BufferMethods.createBufferFromHex("87040c000c00000000000000000000000099999999000000909999999989000090a911119a890000901911119189000090191111918900009019111191890000901911119189000090a911119a890000909999999989000000999999998800000088888888080000")
 
 
 
 
-function inline__P6301(s) {
+function inline__P39475(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2028,13 +2028,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P6301.info = {"start":12233,"length":186,"line":351,"column":32,"endLine":357,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
-inline__P6301.info = {"start":12233,"length":186,"line":351,"column":32,"endLine":357,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
+inline__P39475.info = {"start":12388,"length":186,"line":355,"column":32,"endLine":361,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
+inline__P39475.info = {"start":12388,"length":186,"line":355,"column":32,"endLine":361,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P6301_mk(s) {
+function inline__P39475_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P6301, depth: s.depth + 1,
+        parent: s, fn: inline__P39475, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2045,7 +2045,7 @@ function inline__P6301_mk(s) {
 
 
 
-function inline__P6309(s) {
+function inline__P39483(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2055,27 +2055,27 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0)) return null;
 switch (step) {
   case 0:
 
-    s.currGame___6311 = undefined;
+    s.currGame___39485 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
-    r0 = globals.currentGame___6266;
-    s.currGame___6311 = (r0);
-    s.tmp_0 = football_Game_resetPlayerPositions__P4147_mk(s);
-    s.tmp_0.arg0 = s.currGame___6311;
+    r0 = globals.currentGame___39436;
+    s.currGame___39485 = (r0);
+    s.tmp_0 = football_Game_resetPlayerPositions__P39421_mk(s);
+    s.tmp_0.arg0 = s.currGame___39485;
     s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
     s.tmp_0 = Team_celebrate__P4438_mk(s);
-    r0 = s.currGame___6311.fields["teamWithPossession"];
+    r0 = s.currGame___39485.fields["teamWithPossession"];
     s.tmp_0.arg0 = r0;
     s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
     s.tmp_0 = Team_celebrate__P4438_mk(s);
-    s.tmp_1 = football_Game_defense__P4149_mk(s);
-    s.tmp_1.arg0 = s.currGame___6311;
+    s.tmp_1 = football_Game_defense__P39423_mk(s);
+    s.tmp_1.arg0 = s.currGame___39485;
     s.pc = 4; return s.tmp_1;
   case 4:
     r0 = s.retval;
@@ -2093,17 +2093,17 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P6309.info = {"start":12453,"length":275,"line":359,"column":28,"endLine":365,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":["win"]}
-inline__P6309.info = {"start":12453,"length":275,"line":359,"column":28,"endLine":365,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":["win"]}
+inline__P39483.info = {"start":12608,"length":275,"line":363,"column":28,"endLine":369,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":["win"]}
+inline__P39483.info = {"start":12608,"length":275,"line":363,"column":28,"endLine":369,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":["win"]}
 
-function inline__P6309_mk(s) {
+function inline__P39483_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P6309, depth: s.depth + 1,
+        parent: s, fn: inline__P39483, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
-  currGame___6311: undefined,
+  currGame___39485: undefined,
   arg0: undefined,
 } }
 
@@ -2111,7 +2111,7 @@ function inline__P6309_mk(s) {
 
 
 
-function football_Game_startPlay__P4153(s) {
+function football_Game_startPlay__P39427(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2121,14 +2121,14 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0)) return null;
 switch (step) {
   case 0:
 
-    s.finished___5974 = undefined;
-    s.downText___5986 = undefined;
+    s.finished___39523 = undefined;
+    s.downText___39535 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, football_Game__C4143_VT)) failedCast(r0);
+    if (!checkSubtype(r0, football_Game__C39417_VT)) failedCast(r0);
     r0 = s.arg0.fields["downs"];
     s.tmp_1 = r0;
     r0 = (s.tmp_1 >= 4);
@@ -2141,7 +2141,7 @@ switch (step) {
     s.pc = 13; return s.tmp_2;
   case 13:
     r0 = s.retval;
-    s.tmp_0 = football_Game_turnOver__P4157_mk(s);
+    s.tmp_0 = football_Game_turnOver__P39431_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.pc = 14; return s.tmp_0;
   case 14:
@@ -2153,7 +2153,7 @@ switch (step) {
     r0 = s.retval;
   case 1:
   case 2:
-    s.tmp_0 = football_Game_playerWhoHasBall__P4146_mk(s);
+    s.tmp_0 = football_Game_playerWhoHasBall__P39420_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.tmp_0.arg1 = undefined;
     s.pc = 16; return s.tmp_0;
@@ -2173,13 +2173,13 @@ switch (step) {
     s.pc = 17; return s.tmp_3;
   case 17:
     r0 = s.retval;
-    s.finished___5974 = (r0);
-    r0 = pxsim_numops_toBoolDecr(s.finished___5974);
+    s.finished___39523 = (r0);
+    r0 = pxsim_numops_toBoolDecr(s.finished___39523);
     if (!r0) { step = 3; continue; }
     { step = 12; continue; }
   case 3:
   case 4:
-    s.tmp_0 = football_Game_turnOver__P4157_mk(s);
+    s.tmp_0 = football_Game_turnOver__P39431_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.pc = 18; return s.tmp_0;
   case 18:
@@ -2192,13 +2192,13 @@ switch (step) {
     r0 = (s.tmp_2 + 1);
     s.tmp_1 = r0;
     r0 = (s.tmp_0).fields["downs"] = (s.tmp_1);
-    s.tmp_0 = football_Game_resetPlayerPositions__P4147_mk(s);
+    s.tmp_0 = football_Game_resetPlayerPositions__P39421_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.pc = 19; return s.tmp_0;
   case 19:
     r0 = s.retval;
     r0 = pxsim_String_.mkEmpty();
-    s.downText___5986 = (r0);
+    s.downText___39535 = (r0);
     r0 = s.arg0.fields["downs"];
     s.tmp_0 = r0;
     r0 = pxsim_pxtcore.switch_eq(1, s.tmp_0);
@@ -2212,18 +2212,18 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 11; continue; }
   case 7:
-    s.downText___5986 = ("1ST");
+    s.downText___39535 = ("1ST");
     { step = 11; continue; }
   case 8:
-    s.downText___5986 = ("2ND");
+    s.downText___39535 = ("2ND");
     { step = 11; continue; }
   case 9:
-    s.downText___5986 = ("3RD");
+    s.downText___39535 = ("3RD");
     { step = 11; continue; }
   case 10:
-    s.downText___5986 = ("4TH");
+    s.downText___39535 = ("4TH");
   case 11:
-    s.tmp_0 = football_Game_resetPlayerPositions__P4147_mk(s);
+    s.tmp_0 = football_Game_resetPlayerPositions__P39421_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.pc = 20; return s.tmp_0;
   case 20:
@@ -2231,12 +2231,12 @@ switch (step) {
     s.tmp_0 = text_util_showInstruction__P3846_mk(s);
     r0 = pxsim_String_.mkEmpty();
     s.tmp_2 = r0;
-    if ((s.downText___5986) && (s.downText___5986).vtable) {
+    if ((s.downText___39535) && (s.downText___39535).vtable) {
     setupResume(s, 22);
-    pxsim_String__stringConv(s.downText___5986);
+    pxsim_String__stringConv(s.downText___39535);
     checkResumeConsumed();
     return;
-    } else { s.retval = (s.downText___5986) + ""; }
+    } else { s.retval = (s.downText___39535) + ""; }
   case 22:
     r0 = s.retval;
     s.tmp_3 = r0;
@@ -2253,7 +2253,7 @@ switch (step) {
     s.pc = 23; return s.tmp_0;
   case 23:
     r0 = s.retval;
-    s.tmp_0 = ball_toss__P5201_mk(s);
+    s.tmp_0 = ball_toss__P42951_mk(s);
     s.pc = 24; return s.tmp_0;
   case 24:
     r0 = s.retval;
@@ -2262,20 +2262,20 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-football_Game_startPlay__P4153.info = {"start":3644,"length":973,"line":115,"column":8,"endLine":147,"endColumn":9,"fileName":"game.ts","functionName":"startPlay","argumentNames":["this"]}
-football_Game_startPlay__P4153.info = {"start":3644,"length":973,"line":115,"column":8,"endLine":147,"endColumn":9,"fileName":"game.ts","functionName":"startPlay","argumentNames":["this"]}
+football_Game_startPlay__P39427.info = {"start":3644,"length":973,"line":115,"column":8,"endLine":147,"endColumn":9,"fileName":"game.ts","functionName":"startPlay","argumentNames":["this"]}
+football_Game_startPlay__P39427.info = {"start":3644,"length":973,"line":115,"column":8,"endLine":147,"endColumn":9,"fileName":"game.ts","functionName":"startPlay","argumentNames":["this"]}
 
-function football_Game_startPlay__P4153_mk(s) {
+function football_Game_startPlay__P39427_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_Game_startPlay__P4153, depth: s.depth + 1,
+        parent: s, fn: football_Game_startPlay__P39427, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
   tmp_3: undefined,
-  finished___5974: undefined,
-  downText___5986: undefined,
+  finished___39523: undefined,
+  downText___39535: undefined,
   arg0: undefined,
 } }
 
@@ -2283,7 +2283,7 @@ function football_Game_startPlay__P4153_mk(s) {
 
 
 
-function ball_toss__P5201(s) {
+function ball_toss__P42951(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2293,33 +2293,33 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0)) return null;
 switch (step) {
   case 0:
 
-    s.currentGame___5204 = undefined;
-    s.offenseDirection___5207 = undefined;
-    s.playerIsOffense___5211 = undefined;
-    s.qb___5272 = undefined;
-    s.qbAnimation___5273 = undefined;
-    s.maxSpeed___5370 = undefined;
-    s.speed___5373 = undefined;
-    s.diffY___5388 = undefined;
-    s.diffX___5394 = undefined;
-    s.angleToTarget___5400 = undefined;
-    s.tmp_0 = ball_clear__P5203_mk(s);
+    s.currentGame___42954 = undefined;
+    s.offenseDirection___42957 = undefined;
+    s.playerIsOffense___42961 = undefined;
+    s.qb___43021 = undefined;
+    s.qbAnimation___43022 = undefined;
+    s.maxSpeed___43119 = undefined;
+    s.speed___43122 = undefined;
+    s.diffY___43137 = undefined;
+    s.diffX___43143 = undefined;
+    s.angleToTarget___43149 = undefined;
+    s.tmp_0 = ball_clear__P42953_mk(s);
     s.pc = 9; return s.tmp_0;
   case 9:
     r0 = s.retval;
-    r0 = globals.currentGame___6266;
-    s.currentGame___5204 = (r0);
-    s.tmp_0 = football_Game_offenseDirection__P4155_mk(s);
-    s.tmp_0.arg0 = s.currentGame___5204;
+    r0 = globals.currentGame___39436;
+    s.currentGame___42954 = (r0);
+    s.tmp_0 = football_Game_offenseDirection__P39429_mk(s);
+    s.tmp_0.arg0 = s.currentGame___42954;
     s.pc = 10; return s.tmp_0;
   case 10:
     r0 = s.retval;
-    s.offenseDirection___5207 = (r0);
-    r0 = s.currentGame___5204.fields["teamWithPossession"];
+    s.offenseDirection___42957 = (r0);
+    r0 = s.currentGame___42954.fields["teamWithPossession"];
     s.tmp_0 = r0;
     r0 = s.tmp_0.fields["controlled"];
-    s.playerIsOffense___5211 = (r0);
-    r0 = pxsim_numops_toBoolDecr(s.playerIsOffense___5211);
+    s.playerIsOffense___42961 = (r0);
+    r0 = pxsim_numops_toBoolDecr(s.playerIsOffense___42961);
     if (!r0) { step = 1; continue; }
     r0 = "THROW!";
     { step = 2; continue; }
@@ -2335,15 +2335,15 @@ switch (step) {
   case 11:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P730_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex5221);
+    r0 = pxsim.image.ofBuffer(_hex42971);
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = globals.ThrowTarget___4081;
     s.pc = 12; return s.tmp_0;
   case 12:
     r0 = s.retval;
-    globals.target___5198 = (r0);
+    globals.target___42948 = (r0);
     s.tmp_0 = if_z_2_mk(s);
-    s.tmp_0.arg0 = globals.target___5198;
+    s.tmp_0.arg0 = globals.target___42948;
     s.tmp_0.arg1 = 99;
     if (!s.tmp_0.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapSetByString(s.tmp_0.arg0, "z", s.tmp_0.arg1);
@@ -2356,13 +2356,13 @@ switch (step) {
   case 13:
     r0 = s.retval;
     s.tmp_0 = Sprite_x__P738_mk(s);
-    s.tmp_0.arg0 = globals.target___5198;
+    s.tmp_0.arg0 = globals.target___42948;
     s.tmp_1 = Math_clamp__P72_mk(s);
     s.tmp_1.arg0 = 8;
     s.tmp_1.arg1 = 312;
-    r0 = s.currentGame___5204.fields["lineOfScrimmage"];
+    r0 = s.currentGame___42954.fields["lineOfScrimmage"];
     s.tmp_2 = r0;
-    r0 = (40 * s.offenseDirection___5207);
+    r0 = (40 * s.offenseDirection___42957);
     s.tmp_3 = r0;
     r0 = (s.tmp_2 + s.tmp_3);
     s.tmp_1.arg2 = r0;
@@ -2374,20 +2374,20 @@ switch (step) {
   case 14:
     r0 = s.retval;
     s.tmp_0 = util_focusCamera__P5242_mk(s);
-    s.tmp_0.arg0 = globals.target___5198;
+    s.tmp_0.arg0 = globals.target___42948;
     s.pc = 16; return s.tmp_0;
   case 16:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P730_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex5247);
+    r0 = pxsim.image.ofBuffer(_hex42996);
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = globals.Shadow___4078;
     s.pc = 17; return s.tmp_0;
   case 17:
     r0 = s.retval;
-    globals.shadow___5197 = (r0);
+    globals.shadow___42947 = (r0);
     s.tmp_0 = if_z_2_mk(s);
-    s.tmp_0.arg0 = globals.shadow___5197;
+    s.tmp_0.arg0 = globals.shadow___42947;
     s.tmp_0.arg1 = 1;
     if (!s.tmp_0.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapSetByString(s.tmp_0.arg0, "z", s.tmp_0.arg1);
@@ -2400,17 +2400,17 @@ switch (step) {
   case 18:
     r0 = s.retval;
     s.tmp_0 = Sprite_setFlag__P774_mk(s);
-    s.tmp_0.arg0 = globals.shadow___5197;
+    s.tmp_0.arg0 = globals.shadow___42947;
     s.tmp_0.arg1 = 1;
     s.tmp_0.arg2 = true;
     s.pc = 19; return s.tmp_0;
   case 19:
     r0 = s.retval;
     s.tmp_0 = Sprite_setPosition__P767_mk(s);
-    s.tmp_0.arg0 = globals.shadow___5197;
-    r0 = s.currentGame___5204.fields["lineOfScrimmage"];
+    s.tmp_0.arg0 = globals.shadow___42947;
+    r0 = s.currentGame___42954.fields["lineOfScrimmage"];
     s.tmp_1 = r0;
-    r0 = (40 * s.offenseDirection___5207);
+    r0 = (40 * s.offenseDirection___42957);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 - s.tmp_2);
     s.tmp_0.arg1 = r0;
@@ -2420,14 +2420,14 @@ switch (step) {
   case 20:
     r0 = s.retval;
     s.tmp_0 = Sprite_x__P737_mk(s);
-    s.tmp_0.arg0 = globals.shadow___5197;
+    s.tmp_0.arg0 = globals.shadow___42947;
     s.pc = 21; return s.tmp_0;
   case 21:
     r0 = s.retval;
-    globals.lastXPos___5199 = (r0);
+    globals.lastXPos___42949 = (r0);
     s.tmp_0 = if_qb_1_mk(s);
     s.tmp_2 = Team_quarterBack__P4432_mk(s);
-    r0 = s.currentGame___5204.fields["teamWithPossession"];
+    r0 = s.currentGame___42954.fields["teamWithPossession"];
     s.tmp_2.arg0 = r0;
     s.pc = 23; return s.tmp_2;
   case 23:
@@ -2444,7 +2444,7 @@ switch (step) {
     }
   case 22:
     r0 = s.retval;
-    s.qb___5272 = (r0);
+    s.qb___43021 = (r0);
     s.tmp_3 = if_qbAnimation_1_mk(s);
     s.tmp_3.arg0 = s.tmp_1;
     if (!s.tmp_3.arg0.vtable.iface) {
@@ -2457,11 +2457,11 @@ switch (step) {
     }
   case 24:
     r0 = s.retval;
-    s.qbAnimation___5273 = (r0);
+    s.qbAnimation___43022 = (r0);
     s.tmp_0 = Sprite_x__P738_mk(s);
-    s.tmp_0.arg0 = s.qb___5272;
+    s.tmp_0.arg0 = s.qb___43021;
     s.tmp_1 = Sprite_x__P737_mk(s);
-    s.tmp_1.arg0 = globals.shadow___5197;
+    s.tmp_1.arg0 = globals.shadow___42947;
     s.pc = 26; return s.tmp_1;
   case 26:
     r0 = s.retval;
@@ -2470,9 +2470,9 @@ switch (step) {
   case 25:
     r0 = s.retval;
     s.tmp_0 = Sprite_y__P740_mk(s);
-    s.tmp_0.arg0 = s.qb___5272;
+    s.tmp_0.arg0 = s.qb___43021;
     s.tmp_1 = Sprite_y__P739_mk(s);
-    s.tmp_1.arg0 = globals.shadow___5197;
+    s.tmp_1.arg0 = globals.shadow___42947;
     s.pc = 28; return s.tmp_1;
   case 28:
     r0 = s.retval;
@@ -2480,10 +2480,10 @@ switch (step) {
     s.pc = 27; return s.tmp_0;
   case 27:
     r0 = s.retval;
-    r0 = pxsim_numops_toBoolDecr(s.playerIsOffense___5211);
+    r0 = pxsim_numops_toBoolDecr(s.playerIsOffense___42961);
     if (!r0) { step = 3; continue; }
     s.tmp_0 = controller_moveSprite__P711_mk(s);
-    s.tmp_0.arg0 = globals.target___5198;
+    s.tmp_0.arg0 = globals.target___42948;
     s.tmp_0.arg1 = 150;
     s.tmp_0.arg2 = 150;
     s.pc = 29; return s.tmp_0;
@@ -2496,12 +2496,12 @@ switch (step) {
     s.pc = 30; return s.tmp_0;
   case 30:
     r0 = s.retval;
-    r0 = pxsim_numops_toBoolDecr(s.playerIsOffense___5211);
+    r0 = pxsim_numops_toBoolDecr(s.playerIsOffense___42961);
     if (!r0) { step = 5; continue; }
-    r0 = pxsim_pxtcore_mkAction(2, inline__P5289);
+    r0 = pxsim_pxtcore_mkAction(2, inline__P43038);
     s.tmp_0 = r0;
-    r0 = pxsim_pxtrt_stclo(s.tmp_0, 0, s.offenseDirection___5207);
-    r0 = pxsim_pxtrt_stclo(s.tmp_0, 1, s.currentGame___5204);
+    r0 = pxsim_pxtrt_stclo(s.tmp_0, 0, s.offenseDirection___42957);
+    r0 = pxsim_pxtrt_stclo(s.tmp_0, 1, s.currentGame___42954);
     s.tmp_1 = pauseUntil__P228_mk(s);
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = undefined;
@@ -2511,8 +2511,8 @@ switch (step) {
     { step = 6; continue; }
   case 5:
     s.tmp_0 = Sprite_vx__P742_mk(s);
-    s.tmp_0.arg0 = globals.target___5198;
-    s.tmp_1 = r0 = s.offenseDirection___5207;
+    s.tmp_0.arg0 = globals.target___42948;
+    s.tmp_1 = r0 = s.offenseDirection___42957;
     r0 = pxsim.Math_.randomRange(0, 100);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 * s.tmp_2);
@@ -2521,7 +2521,7 @@ switch (step) {
   case 32:
     r0 = s.retval;
     s.tmp_0 = Sprite_vy__P744_mk(s);
-    s.tmp_0.arg0 = globals.target___5198;
+    s.tmp_0.arg0 = globals.target___42948;
     r0 = pxsim.Math_.randomRange(-40, 40);
     s.tmp_0.arg1 = r0;
     s.pc = 33; return s.tmp_0;
@@ -2534,13 +2534,13 @@ switch (step) {
   case 34:
     r0 = s.retval;
     s.tmp_0 = Sprite_vx__P742_mk(s);
-    s.tmp_0.arg0 = globals.target___5198;
+    s.tmp_0.arg0 = globals.target___42948;
     s.tmp_0.arg1 = 0;
     s.pc = 35; return s.tmp_0;
   case 35:
     r0 = s.retval;
     s.tmp_0 = Sprite_vy__P744_mk(s);
-    s.tmp_0.arg0 = globals.target___5198;
+    s.tmp_0.arg0 = globals.target___42948;
     s.tmp_0.arg1 = 0;
     s.pc = 36; return s.tmp_0;
   case 36:
@@ -2552,14 +2552,14 @@ switch (step) {
     r0 = s.retval;
   case 6:
     s.tmp_0 = Sprite_setFlag__P774_mk(s);
-    s.tmp_0.arg0 = globals.shadow___5197;
+    s.tmp_0.arg0 = globals.shadow___42947;
     s.tmp_0.arg1 = 1;
     s.tmp_0.arg2 = false;
     s.pc = 38; return s.tmp_0;
   case 38:
     r0 = s.retval;
     s.tmp_0 = if_z_2_mk(s);
-    s.tmp_0.arg0 = globals.target___5198;
+    s.tmp_0.arg0 = globals.target___42948;
     s.tmp_0.arg1 = 2;
     if (!s.tmp_0.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapSetByString(s.tmp_0.arg0, "z", s.tmp_0.arg1);
@@ -2572,22 +2572,22 @@ switch (step) {
   case 39:
     r0 = s.retval;
     s.tmp_0 = controller_moveSprite__P711_mk(s);
-    s.tmp_0.arg0 = globals.target___5198;
+    s.tmp_0.arg0 = globals.target___42948;
     s.tmp_0.arg1 = 0;
     s.tmp_0.arg2 = 0;
     s.pc = 40; return s.tmp_0;
   case 40:
     r0 = s.retval;
     s.tmp_0 = animation_runImageAnimation__P1970_mk(s);
-    s.tmp_0.arg0 = s.qb___5272;
-    s.tmp_0.arg1 = s.qbAnimation___5273;
+    s.tmp_0.arg0 = s.qb___43021;
+    s.tmp_0.arg1 = s.qbAnimation___43022;
     s.tmp_0.arg2 = 150;
     s.tmp_0.arg3 = undefined;
     s.pc = 41; return s.tmp_0;
   case 41:
     r0 = s.retval;
     s.tmp_0 = util_focusCamera__P5242_mk(s);
-    s.tmp_0.arg0 = globals.shadow___5197;
+    s.tmp_0.arg0 = globals.shadow___42947;
     s.pc = 42; return s.tmp_0;
   case 42:
     r0 = s.retval;
@@ -2597,22 +2597,22 @@ switch (step) {
   case 43:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P730_mk(s);
-    r0 = pxsim.image.ofBuffer(_hex5345);
+    r0 = pxsim.image.ofBuffer(_hex43094);
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = globals.Ball___4075;
     s.pc = 44; return s.tmp_0;
   case 44:
     r0 = s.retval;
-    globals.fball___5196 = (r0);
+    globals.fball___42946 = (r0);
     s.tmp_0 = Sprite_setPosition__P767_mk(s);
-    s.tmp_0.arg0 = globals.fball___5196;
+    s.tmp_0.arg0 = globals.fball___42946;
     s.tmp_0.arg1 = 20;
     s.tmp_0.arg2 = 100;
     s.pc = 45; return s.tmp_0;
   case 45:
     r0 = s.retval;
     s.tmp_0 = if_z_2_mk(s);
-    s.tmp_0.arg0 = globals.fball___5196;
+    s.tmp_0.arg0 = globals.fball___42946;
     s.tmp_0.arg1 = 10;
     if (!s.tmp_0.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapSetByString(s.tmp_0.arg0, "z", s.tmp_0.arg1);
@@ -2625,7 +2625,7 @@ switch (step) {
   case 46:
     r0 = s.retval;
     s.tmp_0 = Sprite_setFlag__P774_mk(s);
-    s.tmp_0.arg0 = globals.fball___5196;
+    s.tmp_0.arg0 = globals.fball___42946;
     s.tmp_0.arg1 = 1;
     s.tmp_0.arg2 = true;
     s.pc = 47; return s.tmp_0;
@@ -2633,52 +2633,52 @@ switch (step) {
     r0 = s.retval;
     r0 = pxsim_Array__mk();
     s.tmp_0 = r0;
-    r0 = pxsim.image.ofBuffer(_hex5359);
+    r0 = pxsim.image.ofBuffer(_hex43108);
     s.tmp_1 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_1);
-    r0 = pxsim.image.ofBuffer(_hex5361);
+    r0 = pxsim.image.ofBuffer(_hex43110);
     s.tmp_2 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_2);
-    r0 = pxsim.image.ofBuffer(_hex5363);
+    r0 = pxsim.image.ofBuffer(_hex43112);
     s.tmp_3 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_3);
-    r0 = pxsim.image.ofBuffer(_hex5365);
+    r0 = pxsim.image.ofBuffer(_hex43114);
     s.tmp_4 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_4);
-    r0 = pxsim.image.ofBuffer(_hex5367);
+    r0 = pxsim.image.ofBuffer(_hex43116);
     s.tmp_5 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_5);
-    r0 = pxsim.image.ofBuffer(_hex5369);
+    r0 = pxsim.image.ofBuffer(_hex43118);
     s.tmp_6 = r0;
     r0 = pxsim_Array__push(s.tmp_0, s.tmp_6);
     s.tmp_7 = animation_runImageAnimation__P1970_mk(s);
-    s.tmp_7.arg0 = globals.fball___5196;
+    s.tmp_7.arg0 = globals.fball___42946;
     s.tmp_7.arg1 = s.tmp_0;
     s.tmp_7.arg2 = 30;
     s.tmp_7.arg3 = true;
     s.pc = 48; return s.tmp_7;
   case 48:
     r0 = s.retval;
-    r0 = globals._hardMode___5791;
+    r0 = globals._hardMode___39413;
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 7; continue; }
     r0 = 120;
     { step = 8; continue; }
   case 7:
-    r0 = 80;
+    r0 = 75;
   case 8:
     // jmp value (already in r0)
     s.tmp_1 = r0;
-    s.maxSpeed___5370 = (s.tmp_1);
-    r0 = (s.maxSpeed___5370 >> 1);
+    s.maxSpeed___43119 = (s.tmp_1);
+    r0 = (s.maxSpeed___43119 >> 1);
     s.tmp_0 = r0;
-    r0 = pxsim.Math_.randomRange(s.tmp_0, s.maxSpeed___5370);
-    s.speed___5373 = (r0);
+    r0 = pxsim.Math_.randomRange(s.tmp_0, s.maxSpeed___43119);
+    s.speed___43122 = (r0);
     s.tmp_0 = Math_max__P75_mk(s);
-    r0 = (s.maxSpeed___5370 * 1.4);
+    r0 = (s.maxSpeed___43119 * 1.4);
     s.tmp_2 = r0;
-    r0 = (s.tmp_2 - s.speed___5373);
+    r0 = (s.tmp_2 - s.speed___43122);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 >> 1);
     s.tmp_0.arg0 = r0;
@@ -2686,52 +2686,52 @@ switch (step) {
     s.pc = 49; return s.tmp_0;
   case 49:
     r0 = s.retval;
-    globals.ballOffsetMagnitude___5200 = (r0);
+    globals.ballOffsetMagnitude___42950 = (r0);
     s.tmp_1 = Sprite_y__P739_mk(s);
-    s.tmp_1.arg0 = globals.target___5198;
+    s.tmp_1.arg0 = globals.target___42948;
     s.pc = 50; return s.tmp_1;
   case 50:
     r0 = s.retval;
     s.tmp_0 = r0;
     s.tmp_3 = Sprite_y__P739_mk(s);
-    s.tmp_3.arg0 = globals.shadow___5197;
+    s.tmp_3.arg0 = globals.shadow___42947;
     s.pc = 51; return s.tmp_3;
   case 51:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = (s.tmp_0 - s.tmp_2);
-    s.diffY___5388 = (r0);
+    s.diffY___43137 = (r0);
     s.tmp_1 = Sprite_x__P737_mk(s);
-    s.tmp_1.arg0 = globals.target___5198;
+    s.tmp_1.arg0 = globals.target___42948;
     s.pc = 52; return s.tmp_1;
   case 52:
     r0 = s.retval;
     s.tmp_0 = r0;
     s.tmp_3 = Sprite_x__P737_mk(s);
-    s.tmp_3.arg0 = globals.shadow___5197;
+    s.tmp_3.arg0 = globals.shadow___42947;
     s.pc = 53; return s.tmp_3;
   case 53:
     r0 = s.retval;
     s.tmp_2 = r0;
     r0 = (s.tmp_0 - s.tmp_2);
-    s.diffX___5394 = (r0);
-    r0 = pxsim.Math_.atan2(s.diffY___5388, s.diffX___5394);
-    s.angleToTarget___5400 = (r0);
+    s.diffX___43143 = (r0);
+    r0 = pxsim.Math_.atan2(s.diffY___43137, s.diffX___43143);
+    s.angleToTarget___43149 = (r0);
     s.tmp_0 = Sprite_setVelocity__P768_mk(s);
-    s.tmp_0.arg0 = globals.shadow___5197;
-    r0 = pxsim.Math_.cos(s.angleToTarget___5400);
+    s.tmp_0.arg0 = globals.shadow___42947;
+    r0 = pxsim.Math_.cos(s.angleToTarget___43149);
     s.tmp_1 = r0;
-    r0 = (s.tmp_1 * s.speed___5373);
+    r0 = (s.tmp_1 * s.speed___43122);
     s.tmp_0.arg1 = r0;
-    r0 = pxsim.Math_.sin(s.angleToTarget___5400);
+    r0 = pxsim.Math_.sin(s.angleToTarget___43149);
     s.tmp_2 = r0;
-    r0 = (s.tmp_2 * s.speed___5373);
+    r0 = (s.tmp_2 * s.speed___43122);
     s.tmp_0.arg2 = r0;
     s.pc = 54; return s.tmp_0;
   case 54:
     r0 = s.retval;
-    s.tmp_0 = football_Game_startClock__P4152_mk(s);
-    s.tmp_0.arg0 = s.currentGame___5204;
+    s.tmp_0 = football_Game_startClock__P39426_mk(s);
+    s.tmp_0.arg0 = s.currentGame___42954;
     s.pc = 55; return s.tmp_0;
   case 55:
     r0 = s.retval;
@@ -2747,22 +2747,22 @@ switch (step) {
   case 57:
     r0 = s.retval;
     s.tmp_0 = Sprite_setFlag__P774_mk(s);
-    s.tmp_0.arg0 = s.qb___5272;
+    s.tmp_0.arg0 = s.qb___43021;
     s.tmp_0.arg1 = 4;
     s.tmp_0.arg2 = true;
     s.pc = 58; return s.tmp_0;
   case 58:
     r0 = s.retval;
     s.tmp_0 = Sprite_setFlag__P774_mk(s);
-    s.tmp_0.arg0 = s.qb___5272;
+    s.tmp_0.arg0 = s.qb___43021;
     s.tmp_0.arg1 = 16;
     s.tmp_0.arg2 = true;
     s.pc = 59; return s.tmp_0;
   case 59:
     r0 = s.retval;
     s.tmp_0 = Sprite_vx__P742_mk(s);
-    s.tmp_0.arg0 = s.qb___5272;
-    r0 = (-50 * s.offenseDirection___5207);
+    s.tmp_0.arg0 = s.qb___43021;
+    r0 = (-50 * s.offenseDirection___42957);
     s.tmp_0.arg1 = r0;
     s.pc = 60; return s.tmp_0;
   case 60:
@@ -2771,13 +2771,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-ball_toss__P5201.info = {"start":156,"length":5305,"line":7,"column":4,"endLine":166,"endColumn":5,"fileName":"ball.ts","functionName":"toss","argumentNames":[]}
-ball_toss__P5201.info = {"start":156,"length":5305,"line":7,"column":4,"endLine":166,"endColumn":5,"fileName":"ball.ts","functionName":"toss","argumentNames":[]}
+ball_toss__P42951.info = {"start":156,"length":5270,"line":7,"column":4,"endLine":165,"endColumn":5,"fileName":"ball.ts","functionName":"toss","argumentNames":[]}
+ball_toss__P42951.info = {"start":156,"length":5270,"line":7,"column":4,"endLine":165,"endColumn":5,"fileName":"ball.ts","functionName":"toss","argumentNames":[]}
 
-function ball_toss__P5201_mk(s) {
+function ball_toss__P42951_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: ball_toss__P5201, depth: s.depth + 1,
+        parent: s, fn: ball_toss__P42951, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2787,32 +2787,32 @@ function ball_toss__P5201_mk(s) {
   tmp_5: undefined,
   tmp_6: undefined,
   tmp_7: undefined,
-  currentGame___5204: undefined,
-  offenseDirection___5207: undefined,
-  playerIsOffense___5211: undefined,
-  qb___5272: undefined,
-  qbAnimation___5273: undefined,
-  maxSpeed___5370: undefined,
-  speed___5373: undefined,
-  diffY___5388: undefined,
-  diffX___5394: undefined,
-  angleToTarget___5400: undefined,
+  currentGame___42954: undefined,
+  offenseDirection___42957: undefined,
+  playerIsOffense___42961: undefined,
+  qb___43021: undefined,
+  qbAnimation___43022: undefined,
+  maxSpeed___43119: undefined,
+  speed___43122: undefined,
+  diffY___43137: undefined,
+  diffX___43143: undefined,
+  angleToTarget___43149: undefined,
 } }
 
-const _hex5221 = pxsim.BufferMethods.createBufferFromHex("87040c000c000000aa110000a01a0000aa1a0100aa1a0000a0aa11a0aa11000000aa1aaa1a01000000a0aaaa110000000000aa1a010000000000aa1a0100000000a0aaaa1100000000aa1aaa1a010000a0aa11a0aa110000aa1a0100aa1a0000aa110000a01a0000")
-const _hex5247 = pxsim.BufferMethods.createBufferFromHex("870408000600000000aa0000a0ff0a00faffaf00faffaf00faffaf00faffaf00a0ff0a0000aa0000")
-const _hex5345 = pxsim.BufferMethods.createBufferFromHex("870408000600000000a5000050110a008599a9007591a9007571a9007577a80050180a0000a50000")
-const _hex5359 = pxsim.BufferMethods.createBufferFromHex("870408000600000000a5000050110a008599a9007591a9007571a9007577a80050180a0000a50000")
-const _hex5361 = pxsim.BufferMethods.createBufferFromHex("870408000600000000a5000050980a001597a9007517a9007517a7007577a10050870a0000a50000")
-const _hex5363 = pxsim.BufferMethods.createBufferFromHex("870408000600000000a5000050180a008597a9007577a1007577a1007577a70050880a0000a50000")
-const _hex5365 = pxsim.BufferMethods.createBufferFromHex("870408000600000000a5000050980a008597a9008577a9007577a7007577a80050880a0000a50000")
-const _hex5367 = pxsim.BufferMethods.createBufferFromHex("870408000600000000a5000050980a008597a9008577a9007577a7007577a80050880a0000a50000")
-const _hex5369 = pxsim.BufferMethods.createBufferFromHex("870408000600000000a5000050980a008597a9001577a9001577a7007577a80050810a0000a50000")
+const _hex42971 = pxsim.BufferMethods.createBufferFromHex("87040c000c000000aa110000a01a0000aa1a0100aa1a0000a0aa11a0aa11000000aa1aaa1a01000000a0aaaa110000000000aa1a010000000000aa1a0100000000a0aaaa1100000000aa1aaa1a010000a0aa11a0aa110000aa1a0100aa1a0000aa110000a01a0000")
+const _hex42996 = pxsim.BufferMethods.createBufferFromHex("870408000600000000aa0000a0ff0a00faffaf00faffaf00faffaf00faffaf00a0ff0a0000aa0000")
+const _hex43094 = pxsim.BufferMethods.createBufferFromHex("870408000600000000a5000050110a008599a9007591a9007571a9007577a80050180a0000a50000")
+const _hex43108 = pxsim.BufferMethods.createBufferFromHex("870408000600000000a5000050110a008599a9007591a9007571a9007577a80050180a0000a50000")
+const _hex43110 = pxsim.BufferMethods.createBufferFromHex("870408000600000000a5000050980a001597a9007517a9007517a7007577a10050870a0000a50000")
+const _hex43112 = pxsim.BufferMethods.createBufferFromHex("870408000600000000a5000050180a008597a9007577a1007577a1007577a70050880a0000a50000")
+const _hex43114 = pxsim.BufferMethods.createBufferFromHex("870408000600000000a5000050980a008597a9008577a9007577a7007577a80050880a0000a50000")
+const _hex43116 = pxsim.BufferMethods.createBufferFromHex("870408000600000000a5000050980a008597a9008577a9007577a7007577a80050880a0000a50000")
+const _hex43118 = pxsim.BufferMethods.createBufferFromHex("870408000600000000a5000050980a008597a9001577a9001577a7007577a80050810a0000a50000")
 
 
 
 
-function inline__P5289(s) {
+function inline__P43038(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2845,7 +2845,7 @@ switch (step) {
     r0 = pxsim_numops_toBoolDecr(s.tmp_4);
     if (!r0) { step = 3; continue; }
     s.tmp_6 = Sprite_x__P737_mk(s);
-    s.tmp_6.arg0 = globals.target___5198;
+    s.tmp_6.arg0 = globals.target___42948;
     s.pc = 7; return s.tmp_6;
   case 7:
     r0 = s.retval;
@@ -2857,7 +2857,7 @@ switch (step) {
     { step = 4; continue; }
   case 3:
     s.tmp_9 = Sprite_x__P737_mk(s);
-    s.tmp_9.arg0 = globals.target___5198;
+    s.tmp_9.arg0 = globals.target___42948;
     s.pc = 8; return s.tmp_9;
   case 8:
     r0 = s.retval;
@@ -2872,13 +2872,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P5289.info = {"start":1930,"length":346,"line":56,"column":23,"endLine":64,"endColumn":13,"fileName":"ball.ts","functionName":"inline","argumentNames":[]}
-inline__P5289.info = {"start":1930,"length":346,"line":56,"column":23,"endLine":64,"endColumn":13,"fileName":"ball.ts","functionName":"inline","argumentNames":[]}
+inline__P43038.info = {"start":1930,"length":346,"line":56,"column":23,"endLine":64,"endColumn":13,"fileName":"ball.ts","functionName":"inline","argumentNames":[]}
+inline__P43038.info = {"start":1930,"length":346,"line":56,"column":23,"endLine":64,"endColumn":13,"fileName":"ball.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P5289_mk(s) {
+function inline__P43038_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P5289, depth: s.depth + 1,
+        parent: s, fn: inline__P43038, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2897,7 +2897,7 @@ function inline__P5289_mk(s) {
 
 
 
-function football_Game_startClock__P4152(s) {
+function football_Game_startClock__P39426(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2912,14 +2912,14 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, football_Game__C4143_VT)) failedCast(r0);
+    if (!checkSubtype(r0, football_Game__C39417_VT)) failedCast(r0);
     s.tmp_0 = GameClock_start__P4134_mk(s);
     r0 = s.arg0.fields["clock"];
     s.tmp_0.arg0 = r0;
     s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
-    s.tmp_0 = football_Game_setAI__P4160_mk(s);
+    s.tmp_0 = football_Game_setAI__P39434_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.tmp_0.arg1 = true;
     s.pc = 2; return s.tmp_0;
@@ -2929,13 +2929,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-football_Game_startClock__P4152.info = {"start":3548,"length":86,"line":110,"column":8,"endLine":113,"endColumn":9,"fileName":"game.ts","functionName":"startClock","argumentNames":["this"]}
-football_Game_startClock__P4152.info = {"start":3548,"length":86,"line":110,"column":8,"endLine":113,"endColumn":9,"fileName":"game.ts","functionName":"startClock","argumentNames":["this"]}
+football_Game_startClock__P39426.info = {"start":3548,"length":86,"line":110,"column":8,"endLine":113,"endColumn":9,"fileName":"game.ts","functionName":"startClock","argumentNames":["this"]}
+football_Game_startClock__P39426.info = {"start":3548,"length":86,"line":110,"column":8,"endLine":113,"endColumn":9,"fileName":"game.ts","functionName":"startClock","argumentNames":["this"]}
 
-function football_Game_startClock__P4152_mk(s) {
+function football_Game_startClock__P39426_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_Game_startClock__P4152, depth: s.depth + 1,
+        parent: s, fn: football_Game_startClock__P39426, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -2945,7 +2945,7 @@ function football_Game_startClock__P4152_mk(s) {
 
 
 
-function football_Game_setAI__P4160(s) {
+function football_Game_setAI__P39434(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2961,7 +2961,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, football_Game__C4143_VT)) failedCast(r0);
+    if (!checkSubtype(r0, football_Game__C39417_VT)) failedCast(r0);
     r0 = (s.arg0).fields["aiOn"] = (s.arg1);
     s.tmp_1 = Team_activePlayer__P4197_mk(s);
     r0 = s.arg0.fields["teamWithPossession"];
@@ -2976,7 +2976,7 @@ switch (step) {
     { step = 2; continue; }
   case 1:
     s.tmp_2 = Team_activePlayer__P4197_mk(s);
-    s.tmp_3 = football_Game_defense__P4149_mk(s);
+    s.tmp_3 = football_Game_defense__P39423_mk(s);
     s.tmp_3.arg0 = s.arg0;
     s.pc = 7; return s.tmp_3;
   case 7:
@@ -2997,10 +2997,10 @@ switch (step) {
     r0 = s.retval;
     r0 = pxsim_numops_toBoolDecr(s.arg1);
     if (!r0) { step = 3; continue; }
-    r0 = pxsim_pxtcore_mkAction(1, inline__P6205);
+    r0 = pxsim_pxtcore_mkAction(1, inline__P39578);
     s.tmp_0 = r0;
     r0 = pxsim_pxtrt_stclo(s.tmp_0, 0, s.arg0);
-    r0 = pxsim_pxtcore_mkAction(1, inline__P6211);
+    r0 = pxsim_pxtcore_mkAction(1, inline__P39584);
     s.tmp_1 = r0;
     r0 = pxsim_pxtrt_stclo(s.tmp_1, 0, s.arg0);
     s.tmp_2 = helpers_arrayForEach__P59_mk(s);
@@ -3017,15 +3017,15 @@ switch (step) {
     s.pc = 9; return s.tmp_2;
   case 9:
     r0 = s.retval;
-    r0 = pxsim_pxtcore_mkAction(1, inline__P6231);
+    r0 = pxsim_pxtcore_mkAction(1, inline__P39604);
     s.tmp_0 = r0;
     r0 = pxsim_pxtrt_stclo(s.tmp_0, 0, s.arg0);
-    r0 = pxsim_pxtcore_mkAction(1, inline__P6237);
+    r0 = pxsim_pxtcore_mkAction(1, inline__P39610);
     s.tmp_1 = r0;
     r0 = pxsim_pxtrt_stclo(s.tmp_1, 0, s.arg0);
     s.tmp_2 = helpers_arrayForEach__P59_mk(s);
     s.tmp_3 = helpers_arrayFilter__P60_mk(s);
-    s.tmp_4 = football_Game_defense__P4149_mk(s);
+    s.tmp_4 = football_Game_defense__P39423_mk(s);
     s.tmp_4.arg0 = s.arg0;
     s.pc = 13; return s.tmp_4;
   case 13:
@@ -3044,14 +3044,14 @@ switch (step) {
     { step = 4; continue; }
   case 3:
     s.tmp_0 = helpers_arrayForEach__P59_mk(s);
-    s.tmp_1 = football_Game_defense__P4149_mk(s);
+    s.tmp_1 = football_Game_defense__P39423_mk(s);
     s.tmp_1.arg0 = s.arg0;
     s.pc = 15; return s.tmp_1;
   case 15:
     r0 = s.retval;
     r0 = r0.fields["players"];
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = inline__P6248;
+    s.tmp_0.arg1 = inline__P39623;
     s.pc = 14; return s.tmp_0;
   case 14:
     r0 = s.retval;
@@ -3059,7 +3059,7 @@ switch (step) {
     r0 = s.arg0.fields["teamWithPossession"];
     r0 = r0.fields["players"];
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = inline__P6256;
+    s.tmp_0.arg1 = inline__P39631;
     s.pc = 16; return s.tmp_0;
   case 16:
     r0 = s.retval;
@@ -3068,13 +3068,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-football_Game_setAI__P4160.info = {"start":8742,"length":1180,"line":256,"column":8,"endLine":282,"endColumn":9,"fileName":"game.ts","functionName":"setAI","argumentNames":["this","on"]}
-football_Game_setAI__P4160.info = {"start":8742,"length":1180,"line":256,"column":8,"endLine":282,"endColumn":9,"fileName":"game.ts","functionName":"setAI","argumentNames":["this","on"]}
+football_Game_setAI__P39434.info = {"start":8742,"length":1335,"line":256,"column":8,"endLine":286,"endColumn":9,"fileName":"game.ts","functionName":"setAI","argumentNames":["this","on"]}
+football_Game_setAI__P39434.info = {"start":8742,"length":1335,"line":256,"column":8,"endLine":286,"endColumn":9,"fileName":"game.ts","functionName":"setAI","argumentNames":["this","on"]}
 
-function football_Game_setAI__P4160_mk(s) {
+function football_Game_setAI__P39434_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_Game_setAI__P4160, depth: s.depth + 1,
+        parent: s, fn: football_Game_setAI__P39434, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -3090,7 +3090,7 @@ function football_Game_setAI__P4160_mk(s) {
 
 
 
-function inline__P6205(s) {
+function inline__P39578(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3116,13 +3116,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P6205.info = {"start":8969,"length":35,"line":261,"column":28,"endLine":261,"endColumn":63,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
-inline__P6205.info = {"start":8969,"length":35,"line":261,"column":28,"endLine":261,"endColumn":63,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
+inline__P39578.info = {"start":8969,"length":35,"line":261,"column":28,"endLine":261,"endColumn":63,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
+inline__P39578.info = {"start":8969,"length":35,"line":261,"column":28,"endLine":261,"endColumn":63,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
 
-function inline__P6205_mk(s) {
+function inline__P39578_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P6205, depth: s.depth + 1,
+        parent: s, fn: inline__P39578, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -3134,7 +3134,7 @@ function inline__P6205_mk(s) {
 
 
 
-function inline__P6211(s) {
+function inline__P39584(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3150,7 +3150,7 @@ switch (step) {
     }
     s.tmp_0 = Sprite_vx__P742_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    s.tmp_2 = football_Game_offenseDirection__P4155_mk(s);
+    s.tmp_2 = football_Game_offenseDirection__P39429_mk(s);
     s.tmp_2.arg0 = s.caps[0];
     s.pc = 4; return s.tmp_2;
   case 4:
@@ -3189,13 +3189,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P6211.info = {"start":9035,"length":182,"line":262,"column":29,"endLine":265,"endColumn":21,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
-inline__P6211.info = {"start":9035,"length":182,"line":262,"column":29,"endLine":265,"endColumn":21,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
+inline__P39584.info = {"start":9035,"length":182,"line":262,"column":29,"endLine":265,"endColumn":21,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
+inline__P39584.info = {"start":9035,"length":182,"line":262,"column":29,"endLine":265,"endColumn":21,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
 
-function inline__P6211_mk(s) {
+function inline__P39584_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P6211, depth: s.depth + 1,
+        parent: s, fn: inline__P39584, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -3209,7 +3209,7 @@ function inline__P6211_mk(s) {
 
 
 
-function inline__P6231(s) {
+function inline__P39604(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3225,7 +3225,7 @@ switch (step) {
     }
     s.tmp_0 = r0 = s.arg0;
     s.tmp_2 = Team_activePlayer__P4197_mk(s);
-    s.tmp_3 = football_Game_defense__P4149_mk(s);
+    s.tmp_3 = football_Game_defense__P39423_mk(s);
     s.tmp_3.arg0 = s.caps[0];
     s.pc = 2; return s.tmp_3;
   case 2:
@@ -3239,13 +3239,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P6231.info = {"start":9285,"length":35,"line":267,"column":28,"endLine":267,"endColumn":63,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
-inline__P6231.info = {"start":9285,"length":35,"line":267,"column":28,"endLine":267,"endColumn":63,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
+inline__P39604.info = {"start":9285,"length":35,"line":267,"column":28,"endLine":267,"endColumn":63,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
+inline__P39604.info = {"start":9285,"length":35,"line":267,"column":28,"endLine":267,"endColumn":63,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
 
-function inline__P6231_mk(s) {
+function inline__P39604_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P6231, depth: s.depth + 1,
+        parent: s, fn: inline__P39604, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -3258,7 +3258,7 @@ function inline__P6231_mk(s) {
 
 
 
-function inline__P6237(s) {
+function inline__P39610(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3273,32 +3273,53 @@ switch (step) {
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
-    s.tmp_0 = Sprite_follow__P784_mk(s);
-    s.tmp_0.arg0 = s.arg0;
+    s.tmp_2 = football_Game_defense__P39423_mk(s);
+    s.tmp_2.arg0 = s.caps[0];
+    s.pc = 3; return s.tmp_2;
+  case 3:
+    r0 = s.retval;
+    s.tmp_1 = r0;
+    r0 = s.tmp_1.fields["controlled"];
+    s.tmp_0 = r0;
+    r0 = pxsim_numops_toBoolDecr(s.tmp_0);
+    if (!r0) { step = 1; continue; }
+    r0 = 100;
+    { step = 2; continue; }
+  case 1:
+    r0 = 80;
+  case 2:
+    // jmp value (already in r0)
+    s.tmp_3 = r0;
+    s.tmp_4 = Sprite_follow__P784_mk(s);
+    s.tmp_4.arg0 = s.arg0;
     r0 = s.caps[0].fields["teamWithPossession"];
     r0 = r0.fields["players"];
-    s.tmp_1 = r0;
-    r0 = pxsim_Array__getAt(s.tmp_1, s.arg1);
-    s.tmp_0.arg1 = r0;
-    s.tmp_0.arg2 = 100;
-    s.tmp_0.arg3 = 400;
-    s.pc = 1; return s.tmp_0;
-  case 1:
+    s.tmp_5 = r0;
+    r0 = pxsim_Array__getAt(s.tmp_5, s.arg1);
+    s.tmp_4.arg1 = r0;
+    s.tmp_4.arg2 = s.tmp_3;
+    s.tmp_4.arg3 = 80;
+    s.pc = 4; return s.tmp_4;
+  case 4:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P6237.info = {"start":9351,"length":111,"line":268,"column":29,"endLine":270,"endColumn":21,"fileName":"game.ts","functionName":"inline","argumentNames":["player","ind"]}
-inline__P6237.info = {"start":9351,"length":111,"line":268,"column":29,"endLine":270,"endColumn":21,"fileName":"game.ts","functionName":"inline","argumentNames":["player","ind"]}
+inline__P39610.info = {"start":9351,"length":266,"line":268,"column":29,"endLine":274,"endColumn":21,"fileName":"game.ts","functionName":"inline","argumentNames":["player","ind"]}
+inline__P39610.info = {"start":9351,"length":266,"line":268,"column":29,"endLine":274,"endColumn":21,"fileName":"game.ts","functionName":"inline","argumentNames":["player","ind"]}
 
-function inline__P6237_mk(s) {
+function inline__P39610_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P6237, depth: s.depth + 1,
+        parent: s, fn: inline__P39610, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
+  tmp_2: undefined,
+  tmp_3: undefined,
+  tmp_4: undefined,
+  tmp_5: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -3307,7 +3328,7 @@ function inline__P6237_mk(s) {
 
 
 
-function inline__P6248(s) {
+function inline__P39623(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3333,13 +3354,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P6248.info = {"start":9589,"length":24,"line":274,"column":29,"endLine":274,"endColumn":53,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
-inline__P6248.info = {"start":9589,"length":24,"line":274,"column":29,"endLine":274,"endColumn":53,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
+inline__P39623.info = {"start":9744,"length":24,"line":278,"column":29,"endLine":278,"endColumn":53,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
+inline__P39623.info = {"start":9744,"length":24,"line":278,"column":29,"endLine":278,"endColumn":53,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
 
-function inline__P6248_mk(s) {
+function inline__P39623_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P6248, depth: s.depth + 1,
+        parent: s, fn: inline__P39623, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -3349,7 +3370,7 @@ function inline__P6248_mk(s) {
 
 
 
-function inline__P6256(s) {
+function inline__P39631(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -3382,13 +3403,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P6256.info = {"start":9682,"length":214,"line":276,"column":29,"endLine":280,"endColumn":21,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
-inline__P6256.info = {"start":9682,"length":214,"line":276,"column":29,"endLine":280,"endColumn":21,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
+inline__P39631.info = {"start":9837,"length":214,"line":280,"column":29,"endLine":284,"endColumn":21,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
+inline__P39631.info = {"start":9837,"length":214,"line":280,"column":29,"endLine":284,"endColumn":21,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
 
-function inline__P6256_mk(s) {
+function inline__P39631_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P6256, depth: s.depth + 1,
+        parent: s, fn: inline__P39631, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -5171,7 +5192,7 @@ function Math_max__P75_mk(s) {
 
 
 
-function football_hardMode__P4515(s) {
+function football_hardMode__P39442(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -5181,17 +5202,17 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0)) return null;
 switch (step) {
   case 0:
 
-    r0 = globals._hardMode___5791;
+    r0 = globals._hardMode___39413;
     return leave(s, r0)
   default: oops()
 } } }
-football_hardMode__P4515.info = {"start":13898,"length":60,"line":404,"column":4,"endLine":406,"endColumn":5,"fileName":"game.ts","functionName":"hardMode","argumentNames":[]}
-football_hardMode__P4515.info = {"start":13898,"length":60,"line":404,"column":4,"endLine":406,"endColumn":5,"fileName":"game.ts","functionName":"hardMode","argumentNames":[]}
+football_hardMode__P39442.info = {"start":14053,"length":60,"line":408,"column":4,"endLine":410,"endColumn":5,"fileName":"game.ts","functionName":"hardMode","argumentNames":[]}
+football_hardMode__P39442.info = {"start":14053,"length":60,"line":408,"column":4,"endLine":410,"endColumn":5,"fileName":"game.ts","functionName":"hardMode","argumentNames":[]}
 
-function football_hardMode__P4515_mk(s) {
+function football_hardMode__P39442_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_hardMode__P4515, depth: s.depth + 1,
+        parent: s, fn: football_hardMode__P39442, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
 } }
 
@@ -7849,7 +7870,7 @@ switch (step) {
     }
     r0 = s.arg0;
     if (!checkSubtype(r0, Team__C4430_VT)) failedCast(r0);
-    r0 = globals.currentGame___6266;
+    r0 = globals.currentGame___39436;
     s.currentGame___4765 = (r0);
     s.tmp_0 = player_create__P4417_mk(s);
     s.tmp_0.arg0 = s.arg0;
@@ -7857,7 +7878,7 @@ switch (step) {
   case 3:
     r0 = s.retval;
     s.qb___4768 = (r0);
-    s.tmp_2 = football_Game_offenseDirection__P4155_mk(s);
+    s.tmp_2 = football_Game_offenseDirection__P39429_mk(s);
     s.tmp_2.arg0 = s.currentGame___4765;
     s.pc = 4; return s.tmp_2;
   case 4:
@@ -10336,7 +10357,7 @@ function Team_isPlayerControlled__P4422_mk(s) {
 
 
 
-function football_Game_offenseDirection__P4155(s) {
+function football_Game_offenseDirection__P39429(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -10346,14 +10367,14 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0)) return null;
 switch (step) {
   case 0:
 
-    s.playerMovingRight___6029 = undefined;
-    s.playerTeamActive___6040 = undefined;
+    s.playerMovingRight___39647 = undefined;
+    s.playerTeamActive___39658 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, football_Game__C4143_VT)) failedCast(r0);
+    if (!checkSubtype(r0, football_Game__C39417_VT)) failedCast(r0);
     r0 = s.arg0.fields["clock"];
     r0 = r0.fields["quarter"];
     s.tmp_5 = r0;
@@ -10376,7 +10397,7 @@ switch (step) {
   case 2:
     // jmp value (already in r0)
     s.tmp_6 = r0;
-    s.playerMovingRight___6029 = (s.tmp_6);
+    s.playerMovingRight___39647 = (s.tmp_6);
     r0 = s.arg0.fields["teamWithPossession"];
     s.tmp_1 = r0;
     r0 = s.tmp_1.fields["controlled"];
@@ -10390,18 +10411,18 @@ switch (step) {
   case 4:
     // jmp value (already in r0)
     s.tmp_2 = r0;
-    s.playerTeamActive___6040 = (s.tmp_2);
-    r0 = (s.playerMovingRight___6029 * s.playerTeamActive___6040);
+    s.playerTeamActive___39658 = (s.tmp_2);
+    r0 = (s.playerMovingRight___39647 * s.playerTeamActive___39658);
     return leave(s, r0)
   default: oops()
 } } }
-football_Game_offenseDirection__P4155.info = {"start":5295,"length":323,"line":167,"column":8,"endLine":172,"endColumn":9,"fileName":"game.ts","functionName":"offenseDirection","argumentNames":["this"]}
-football_Game_offenseDirection__P4155.info = {"start":5295,"length":323,"line":167,"column":8,"endLine":172,"endColumn":9,"fileName":"game.ts","functionName":"offenseDirection","argumentNames":["this"]}
+football_Game_offenseDirection__P39429.info = {"start":5295,"length":323,"line":167,"column":8,"endLine":172,"endColumn":9,"fileName":"game.ts","functionName":"offenseDirection","argumentNames":["this"]}
+football_Game_offenseDirection__P39429.info = {"start":5295,"length":323,"line":167,"column":8,"endLine":172,"endColumn":9,"fileName":"game.ts","functionName":"offenseDirection","argumentNames":["this"]}
 
-function football_Game_offenseDirection__P4155_mk(s) {
+function football_Game_offenseDirection__P39429_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_Game_offenseDirection__P4155, depth: s.depth + 1,
+        parent: s, fn: football_Game_offenseDirection__P39429, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -10410,8 +10431,8 @@ function football_Game_offenseDirection__P4155_mk(s) {
   tmp_4: undefined,
   tmp_5: undefined,
   tmp_6: undefined,
-  playerMovingRight___6029: undefined,
-  playerTeamActive___6040: undefined,
+  playerMovingRight___39647: undefined,
+  playerTeamActive___39658: undefined,
   arg0: undefined,
 } }
 
@@ -10419,7 +10440,7 @@ function football_Game_offenseDirection__P4155_mk(s) {
 
 
 
-function ball_clear__P5203(s) {
+function ball_clear__P42953(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -10429,49 +10450,49 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0)) return null;
 switch (step) {
   case 0:
 
-    s.currentGame___5456 = undefined;
-    r0 = pxsim_numops_toBoolDecr(globals.target___5198);
+    s.currentGame___43203 = undefined;
+    r0 = pxsim_numops_toBoolDecr(globals.target___42948);
     if (!r0) { step = 1; continue; }
     s.tmp_0 = Sprite_destroy__P782_mk(s);
-    s.tmp_0.arg0 = globals.target___5198;
+    s.tmp_0.arg0 = globals.target___42948;
     s.tmp_0.arg1 = undefined;
     s.tmp_0.arg2 = undefined;
     s.pc = 9; return s.tmp_0;
   case 9:
     r0 = s.retval;
-    globals.target___5198 = (undefined);
+    globals.target___42948 = (undefined);
   case 1:
   case 2:
-    r0 = pxsim_numops_toBoolDecr(globals.fball___5196);
+    r0 = pxsim_numops_toBoolDecr(globals.fball___42946);
     if (!r0) { step = 3; continue; }
     s.tmp_0 = Sprite_destroy__P782_mk(s);
-    s.tmp_0.arg0 = globals.fball___5196;
+    s.tmp_0.arg0 = globals.fball___42946;
     s.tmp_0.arg1 = undefined;
     s.tmp_0.arg2 = undefined;
     s.pc = 10; return s.tmp_0;
   case 10:
     r0 = s.retval;
-    globals.target___5198 = (undefined);
+    globals.target___42948 = (undefined);
   case 3:
   case 4:
-    r0 = pxsim_numops_toBoolDecr(globals.shadow___5197);
+    r0 = pxsim_numops_toBoolDecr(globals.shadow___42947);
     if (!r0) { step = 5; continue; }
     s.tmp_0 = Sprite_destroy__P782_mk(s);
-    s.tmp_0.arg0 = globals.shadow___5197;
+    s.tmp_0.arg0 = globals.shadow___42947;
     s.tmp_0.arg1 = undefined;
     s.tmp_0.arg2 = undefined;
     s.pc = 11; return s.tmp_0;
   case 11:
     r0 = s.retval;
-    globals.target___5198 = (undefined);
+    globals.target___42948 = (undefined);
   case 5:
   case 6:
-    r0 = globals.currentGame___6266;
-    s.currentGame___5456 = (r0);
-    r0 = pxsim_numops_toBoolDecr(s.currentGame___5456);
+    r0 = globals.currentGame___39436;
+    s.currentGame___43203 = (r0);
+    r0 = pxsim_numops_toBoolDecr(s.currentGame___43203);
     if (!r0) { step = 7; continue; }
-    s.tmp_0 = football_Game_playerWhoHasBall__P4146_mk(s);
-    s.tmp_0.arg0 = s.currentGame___5456;
+    s.tmp_0 = football_Game_playerWhoHasBall__P39420_mk(s);
+    s.tmp_0.arg0 = s.currentGame___43203;
     s.tmp_0.arg1 = undefined;
     s.pc = 12; return s.tmp_0;
   case 12:
@@ -10482,16 +10503,16 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-ball_clear__P5203.info = {"start":5467,"length":453,"line":168,"column":4,"endLine":185,"endColumn":5,"fileName":"ball.ts","functionName":"clear","argumentNames":[]}
-ball_clear__P5203.info = {"start":5467,"length":453,"line":168,"column":4,"endLine":185,"endColumn":5,"fileName":"ball.ts","functionName":"clear","argumentNames":[]}
+ball_clear__P42953.info = {"start":5432,"length":453,"line":167,"column":4,"endLine":184,"endColumn":5,"fileName":"ball.ts","functionName":"clear","argumentNames":[]}
+ball_clear__P42953.info = {"start":5432,"length":453,"line":167,"column":4,"endLine":184,"endColumn":5,"fileName":"ball.ts","functionName":"clear","argumentNames":[]}
 
-function ball_clear__P5203_mk(s) {
+function ball_clear__P42953_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: ball_clear__P5203, depth: s.depth + 1,
+        parent: s, fn: ball_clear__P42953, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
-  currentGame___5456: undefined,
+  currentGame___43203: undefined,
 } }
 
 
@@ -29836,7 +29857,7 @@ function GameClock_quarterOver__P4137_mk(s) {
 
 
 
-function football_Game_playerWhoHasBall__P4146(s) {
+function football_Game_playerWhoHasBall__P39420(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -29852,7 +29873,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, football_Game__C4143_VT)) failedCast(r0);
+    if (!checkSubtype(r0, football_Game__C39417_VT)) failedCast(r0);
     r0 = (s.arg1 === undefined);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
@@ -29863,7 +29884,7 @@ switch (step) {
   case 1:
   case 2:
     r0 = (s.arg0).fields["playerEnergy"] = (6);
-    r0 = globals._hardMode___5791;
+    r0 = globals._hardMode___39413;
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     s.tmp_1 = r0;
@@ -29933,7 +29954,7 @@ switch (step) {
   case 10:
     s.tmp_0 = Sprite_vx__P742_mk(s);
     s.tmp_0.arg0 = s.arg1;
-    s.tmp_2 = football_Game_offenseDirection__P4155_mk(s);
+    s.tmp_2 = football_Game_offenseDirection__P39429_mk(s);
     s.tmp_2.arg0 = s.arg0;
     s.pc = 18; return s.tmp_2;
   case 18:
@@ -29958,13 +29979,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-football_Game_playerWhoHasBall__P4146.info = {"start":1988,"length":801,"line":58,"column":8,"endLine":78,"endColumn":9,"fileName":"game.ts","functionName":"playerWhoHasBall","argumentNames":["this","s"]}
-football_Game_playerWhoHasBall__P4146.info = {"start":1988,"length":801,"line":58,"column":8,"endLine":78,"endColumn":9,"fileName":"game.ts","functionName":"playerWhoHasBall","argumentNames":["this","s"]}
+football_Game_playerWhoHasBall__P39420.info = {"start":1988,"length":801,"line":58,"column":8,"endLine":78,"endColumn":9,"fileName":"game.ts","functionName":"playerWhoHasBall","argumentNames":["this","s"]}
+football_Game_playerWhoHasBall__P39420.info = {"start":1988,"length":801,"line":58,"column":8,"endLine":78,"endColumn":9,"fileName":"game.ts","functionName":"playerWhoHasBall","argumentNames":["this","s"]}
 
-function football_Game_playerWhoHasBall__P4146_mk(s) {
+function football_Game_playerWhoHasBall__P39420_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_Game_playerWhoHasBall__P4146, depth: s.depth + 1,
+        parent: s, fn: football_Game_playerWhoHasBall__P39420, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -30035,8 +30056,8 @@ switch (step) {
     s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
-    s.tmp_0 = football_Game_setAI__P4160_mk(s);
-    r0 = globals.currentGame___6266;
+    s.tmp_0 = football_Game_setAI__P39434_mk(s);
+    r0 = globals.currentGame___39436;
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = true;
     s.pc = 5; return s.tmp_0;
@@ -30067,7 +30088,7 @@ function Team_controlNextPlayer__P4439_mk(s) {
 
 
 
-function football_Game_playerWhoHasBall__P4145(s) {
+function football_Game_playerWhoHasBall__P39419(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -30082,19 +30103,19 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, football_Game__C4143_VT)) failedCast(r0);
+    if (!checkSubtype(r0, football_Game__C39417_VT)) failedCast(r0);
     r0 = s.arg0.fields["playerWithPossession"];
     return leaveAccessor(s, r0)
   default: oops()
 } } }
-football_Game_playerWhoHasBall__P4145.info = {"start":1898,"length":80,"line":54,"column":8,"endLine":56,"endColumn":9,"fileName":"game.ts","functionName":"playerWhoHasBall","argumentNames":["this"]}
-football_Game_playerWhoHasBall__P4145.isGetter = true;
-football_Game_playerWhoHasBall__P4145.info = {"start":1898,"length":80,"line":54,"column":8,"endLine":56,"endColumn":9,"fileName":"game.ts","functionName":"playerWhoHasBall","argumentNames":["this"]}
+football_Game_playerWhoHasBall__P39419.info = {"start":1898,"length":80,"line":54,"column":8,"endLine":56,"endColumn":9,"fileName":"game.ts","functionName":"playerWhoHasBall","argumentNames":["this"]}
+football_Game_playerWhoHasBall__P39419.isGetter = true;
+football_Game_playerWhoHasBall__P39419.info = {"start":1898,"length":80,"line":54,"column":8,"endLine":56,"endColumn":9,"fileName":"game.ts","functionName":"playerWhoHasBall","argumentNames":["this"]}
 
-function football_Game_playerWhoHasBall__P4145_mk(s) {
+function football_Game_playerWhoHasBall__P39419_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_Game_playerWhoHasBall__P4145, depth: s.depth + 1,
+        parent: s, fn: football_Game_playerWhoHasBall__P39419, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   arg0: undefined,
 } }
@@ -30103,7 +30124,7 @@ function football_Game_playerWhoHasBall__P4145_mk(s) {
 
 
 
-function football_Game_turnOver__P4157(s) {
+function football_Game_turnOver__P39431(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -30118,9 +30139,9 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, football_Game__C4143_VT)) failedCast(r0);
+    if (!checkSubtype(r0, football_Game__C39417_VT)) failedCast(r0);
     s.tmp_0 = r0 = s.arg0;
-    s.tmp_2 = football_Game_defense__P4149_mk(s);
+    s.tmp_2 = football_Game_defense__P39423_mk(s);
     s.tmp_2.arg0 = s.arg0;
     s.pc = 3; return s.tmp_2;
   case 3:
@@ -30128,7 +30149,7 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = (s.tmp_0).fields["teamWithPossession"] = (s.tmp_1);
     r0 = (s.arg0).fields["downs"] = (0);
-    s.tmp_2 = football_Game_offenseDirection__P4155_mk(s);
+    s.tmp_2 = football_Game_offenseDirection__P39429_mk(s);
     s.tmp_2.arg0 = s.arg0;
     s.pc = 4; return s.tmp_2;
   case 4:
@@ -30147,13 +30168,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-football_Game_turnOver__P4157.info = {"start":5852,"length":340,"line":180,"column":8,"endLine":188,"endColumn":9,"fileName":"game.ts","functionName":"turnOver","argumentNames":["this"]}
-football_Game_turnOver__P4157.info = {"start":5852,"length":340,"line":180,"column":8,"endLine":188,"endColumn":9,"fileName":"game.ts","functionName":"turnOver","argumentNames":["this"]}
+football_Game_turnOver__P39431.info = {"start":5852,"length":340,"line":180,"column":8,"endLine":188,"endColumn":9,"fileName":"game.ts","functionName":"turnOver","argumentNames":["this"]}
+football_Game_turnOver__P39431.info = {"start":5852,"length":340,"line":180,"column":8,"endLine":188,"endColumn":9,"fileName":"game.ts","functionName":"turnOver","argumentNames":["this"]}
 
-function football_Game_turnOver__P4157_mk(s) {
+function football_Game_turnOver__P39431_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_Game_turnOver__P4157, depth: s.depth + 1,
+        parent: s, fn: football_Game_turnOver__P39431, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -31735,7 +31756,7 @@ function scene_Renderable_destroy__P1093_mk(s) {
 
 
 
-function football_Game_defense__P4149(s) {
+function football_Game_defense__P39423(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -31750,7 +31771,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, football_Game__C4143_VT)) failedCast(r0);
+    if (!checkSubtype(r0, football_Game__C39417_VT)) failedCast(r0);
     r0 = s.arg0.fields["teamA"];
     s.tmp_1 = r0;
     r0 = s.arg0.fields["teamWithPossession"];
@@ -31770,14 +31791,14 @@ switch (step) {
     return leaveAccessor(s, r0)
   default: oops()
 } } }
-football_Game_defense__P4149.info = {"start":3202,"length":110,"line":95,"column":8,"endLine":97,"endColumn":9,"fileName":"game.ts","functionName":"defense","argumentNames":["this"]}
-football_Game_defense__P4149.isGetter = true;
-football_Game_defense__P4149.info = {"start":3202,"length":110,"line":95,"column":8,"endLine":97,"endColumn":9,"fileName":"game.ts","functionName":"defense","argumentNames":["this"]}
+football_Game_defense__P39423.info = {"start":3202,"length":110,"line":95,"column":8,"endLine":97,"endColumn":9,"fileName":"game.ts","functionName":"defense","argumentNames":["this"]}
+football_Game_defense__P39423.isGetter = true;
+football_Game_defense__P39423.info = {"start":3202,"length":110,"line":95,"column":8,"endLine":97,"endColumn":9,"fileName":"game.ts","functionName":"defense","argumentNames":["this"]}
 
-function football_Game_defense__P4149_mk(s) {
+function football_Game_defense__P39423_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_Game_defense__P4149, depth: s.depth + 1,
+        parent: s, fn: football_Game_defense__P39423, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -31790,7 +31811,7 @@ function football_Game_defense__P4149_mk(s) {
 
 
 
-function football_Game_offense__P4148(s) {
+function football_Game_offense__P39422(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -31805,19 +31826,19 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, football_Game__C4143_VT)) failedCast(r0);
+    if (!checkSubtype(r0, football_Game__C39417_VT)) failedCast(r0);
     r0 = s.arg0.fields["teamWithPossession"];
     return leaveAccessor(s, r0)
   default: oops()
 } } }
-football_Game_offense__P4148.info = {"start":3123,"length":69,"line":91,"column":8,"endLine":93,"endColumn":9,"fileName":"game.ts","functionName":"offense","argumentNames":["this"]}
-football_Game_offense__P4148.isGetter = true;
-football_Game_offense__P4148.info = {"start":3123,"length":69,"line":91,"column":8,"endLine":93,"endColumn":9,"fileName":"game.ts","functionName":"offense","argumentNames":["this"]}
+football_Game_offense__P39422.info = {"start":3123,"length":69,"line":91,"column":8,"endLine":93,"endColumn":9,"fileName":"game.ts","functionName":"offense","argumentNames":["this"]}
+football_Game_offense__P39422.isGetter = true;
+football_Game_offense__P39422.info = {"start":3123,"length":69,"line":91,"column":8,"endLine":93,"endColumn":9,"fileName":"game.ts","functionName":"offense","argumentNames":["this"]}
 
-function football_Game_offense__P4148_mk(s) {
+function football_Game_offense__P39422_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_Game_offense__P4148, depth: s.depth + 1,
+        parent: s, fn: football_Game_offense__P39422, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   arg0: undefined,
 } }
@@ -32029,7 +32050,7 @@ function Math_pickRandom__P1508_mk(s) {
 
 
 
-function football_Game_resetPlayerPositions__P4147(s) {
+function football_Game_resetPlayerPositions__P39421(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -32044,13 +32065,13 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, football_Game__C4143_VT)) failedCast(r0);
+    if (!checkSubtype(r0, football_Game__C39417_VT)) failedCast(r0);
     s.tmp_0 = Team_resetPlayerPositions__P4437_mk(s);
     r0 = s.arg0.fields["teamWithPossession"];
     s.tmp_0.arg0 = r0;
     r0 = s.arg0.fields["lineOfScrimmage"];
     s.tmp_0.arg1 = r0;
-    s.tmp_1 = football_Game_offenseDirection__P4155_mk(s);
+    s.tmp_1 = football_Game_offenseDirection__P39429_mk(s);
     s.tmp_1.arg0 = s.arg0;
     s.pc = 2; return s.tmp_1;
   case 2:
@@ -32060,7 +32081,7 @@ switch (step) {
   case 1:
     r0 = s.retval;
     s.tmp_0 = Team_resetPlayerPositions__P4437_mk(s);
-    s.tmp_1 = football_Game_defense__P4149_mk(s);
+    s.tmp_1 = football_Game_defense__P39423_mk(s);
     s.tmp_1.arg0 = s.arg0;
     s.pc = 4; return s.tmp_1;
   case 4:
@@ -32068,7 +32089,7 @@ switch (step) {
     s.tmp_0.arg0 = r0;
     r0 = s.arg0.fields["lineOfScrimmage"];
     s.tmp_0.arg1 = r0;
-    s.tmp_2 = football_Game_defenseDirection__P4156_mk(s);
+    s.tmp_2 = football_Game_defenseDirection__P39430_mk(s);
     s.tmp_2.arg0 = s.arg0;
     s.pc = 5; return s.tmp_2;
   case 5:
@@ -32081,13 +32102,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-football_Game_resetPlayerPositions__P4147.info = {"start":2799,"length":314,"line":80,"column":8,"endLine":89,"endColumn":9,"fileName":"game.ts","functionName":"resetPlayerPositions","argumentNames":["this"]}
-football_Game_resetPlayerPositions__P4147.info = {"start":2799,"length":314,"line":80,"column":8,"endLine":89,"endColumn":9,"fileName":"game.ts","functionName":"resetPlayerPositions","argumentNames":["this"]}
+football_Game_resetPlayerPositions__P39421.info = {"start":2799,"length":314,"line":80,"column":8,"endLine":89,"endColumn":9,"fileName":"game.ts","functionName":"resetPlayerPositions","argumentNames":["this"]}
+football_Game_resetPlayerPositions__P39421.info = {"start":2799,"length":314,"line":80,"column":8,"endLine":89,"endColumn":9,"fileName":"game.ts","functionName":"resetPlayerPositions","argumentNames":["this"]}
 
-function football_Game_resetPlayerPositions__P4147_mk(s) {
+function football_Game_resetPlayerPositions__P39421_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_Game_resetPlayerPositions__P4147, depth: s.depth + 1,
+        parent: s, fn: football_Game_resetPlayerPositions__P39421, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -32099,7 +32120,7 @@ function football_Game_resetPlayerPositions__P4147_mk(s) {
 
 
 
-function football_Game_defenseDirection__P4156(s) {
+function football_Game_defenseDirection__P39430(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -32114,8 +32135,8 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, football_Game__C4143_VT)) failedCast(r0);
-    s.tmp_1 = football_Game_offenseDirection__P4155_mk(s);
+    if (!checkSubtype(r0, football_Game__C39417_VT)) failedCast(r0);
+    s.tmp_1 = football_Game_offenseDirection__P39429_mk(s);
     s.tmp_1.arg0 = s.arg0;
     s.pc = 1; return s.tmp_1;
   case 1:
@@ -32125,13 +32146,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-football_Game_defenseDirection__P4156.info = {"start":5748,"length":94,"line":176,"column":8,"endLine":178,"endColumn":9,"fileName":"game.ts","functionName":"defenseDirection","argumentNames":["this"]}
-football_Game_defenseDirection__P4156.info = {"start":5748,"length":94,"line":176,"column":8,"endLine":178,"endColumn":9,"fileName":"game.ts","functionName":"defenseDirection","argumentNames":["this"]}
+football_Game_defenseDirection__P39430.info = {"start":5748,"length":94,"line":176,"column":8,"endLine":178,"endColumn":9,"fileName":"game.ts","functionName":"defenseDirection","argumentNames":["this"]}
+football_Game_defenseDirection__P39430.info = {"start":5748,"length":94,"line":176,"column":8,"endLine":178,"endColumn":9,"fileName":"game.ts","functionName":"defenseDirection","argumentNames":["this"]}
 
-function football_Game_defenseDirection__P4156_mk(s) {
+function football_Game_defenseDirection__P39430_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_Game_defenseDirection__P4156, depth: s.depth + 1,
+        parent: s, fn: football_Game_defenseDirection__P39430, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -32279,7 +32300,7 @@ function inline__P4832_mk(s) {
 
 
 
-function football_activeGame__P4472(s) {
+function football_activeGame__P39438(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -32289,17 +32310,17 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0)) return null;
 switch (step) {
   case 0:
 
-    r0 = globals.currentGame___6266;
+    r0 = globals.currentGame___39436;
     return leave(s, r0)
   default: oops()
 } } }
-football_activeGame__P4472.info = {"start":10941,"length":64,"line":311,"column":4,"endLine":313,"endColumn":5,"fileName":"game.ts","functionName":"activeGame","argumentNames":[]}
-football_activeGame__P4472.info = {"start":10941,"length":64,"line":311,"column":4,"endLine":313,"endColumn":5,"fileName":"game.ts","functionName":"activeGame","argumentNames":[]}
+football_activeGame__P39438.info = {"start":11096,"length":64,"line":315,"column":4,"endLine":317,"endColumn":5,"fileName":"game.ts","functionName":"activeGame","argumentNames":[]}
+football_activeGame__P39438.info = {"start":11096,"length":64,"line":315,"column":4,"endLine":317,"endColumn":5,"fileName":"game.ts","functionName":"activeGame","argumentNames":[]}
 
-function football_activeGame__P4472_mk(s) {
+function football_activeGame__P39438_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_activeGame__P4472, depth: s.depth + 1,
+        parent: s, fn: football_activeGame__P39438, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
 } }
 
@@ -32619,7 +32640,7 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0)) return null;
 switch (step) {
   case 0:
 
-    r0 = globals.currentGame___6266;
+    r0 = globals.currentGame___39436;
     s.tmp_1 = r0;
     r0 = s.tmp_1.fields["aiOn"];
     s.tmp_0 = r0;
@@ -32653,7 +32674,7 @@ function inline__P4716_mk(s) {
 
 
 
-function football_Game_playIsActive__P4150(s) {
+function football_Game_playIsActive__P39424(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -32668,18 +32689,18 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, football_Game__C4143_VT)) failedCast(r0);
+    if (!checkSubtype(r0, football_Game__C39417_VT)) failedCast(r0);
     r0 = s.arg0.fields["aiOn"];
     return leave(s, r0)
   default: oops()
 } } }
-football_Game_playIsActive__P4150.info = {"start":3322,"length":55,"line":99,"column":8,"endLine":101,"endColumn":9,"fileName":"game.ts","functionName":"playIsActive","argumentNames":["this"]}
-football_Game_playIsActive__P4150.info = {"start":3322,"length":55,"line":99,"column":8,"endLine":101,"endColumn":9,"fileName":"game.ts","functionName":"playIsActive","argumentNames":["this"]}
+football_Game_playIsActive__P39424.info = {"start":3322,"length":55,"line":99,"column":8,"endLine":101,"endColumn":9,"fileName":"game.ts","functionName":"playIsActive","argumentNames":["this"]}
+football_Game_playIsActive__P39424.info = {"start":3322,"length":55,"line":99,"column":8,"endLine":101,"endColumn":9,"fileName":"game.ts","functionName":"playIsActive","argumentNames":["this"]}
 
-function football_Game_playIsActive__P4150_mk(s) {
+function football_Game_playIsActive__P39424_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_Game_playIsActive__P4150, depth: s.depth + 1,
+        parent: s, fn: football_Game_playIsActive__P39424, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   arg0: undefined,
 } }
@@ -33984,7 +34005,7 @@ function Team_primaryColor__P4358_mk(s) {
 
 
 
-function football_Game_constructor__P5796(s) {
+function football_Game_constructor__P39435(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -34002,7 +34023,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, football_Game__C4143_VT)) failedCast(r0);
+    if (!checkSubtype(r0, football_Game__C39417_VT)) failedCast(r0);
     r0 = (s.arg0).fields["teamA"] = (s.arg1);
     r0 = (s.arg0).fields["teamB"] = (s.arg2);
     r0 = (s.arg0).fields["lineOfScrimmage"] = (55);
@@ -34018,7 +34039,7 @@ switch (step) {
   case 3:
     r0 = s.retval;
     r0 = (s.arg0).fields["clock"] = (s.tmp_0);
-    s.tmp_0 = r0 = globals._hardMode___5791;
+    s.tmp_0 = r0 = globals._hardMode___39413;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (!r0) { step = 1; continue; }
     r0 = s.tmp_0;
@@ -34028,7 +34049,7 @@ switch (step) {
   case 2:
     // jmp value (already in r0)
     s.tmp_1 = r0;
-    globals._hardMode___5791 = (s.tmp_1);
+    globals._hardMode___39413 = (s.tmp_1);
     s.tmp_0 = r0 = s.arg0;
     s.tmp_2 = ui_player_createIndicator__P4186_mk(s);
     s.tmp_2.arg0 = s.arg0;
@@ -34056,7 +34077,7 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = (s.tmp_0).fields["lineOfScrimmageIndicator"] = (s.tmp_1);
     r0 = (s.arg0).fields["aiOn"] = (false);
-    s.tmp_0 = football_Game_initializeEvents__P4159_mk(s);
+    s.tmp_0 = football_Game_initializeEvents__P39433_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.pc = 7; return s.tmp_0;
   case 7:
@@ -34069,7 +34090,7 @@ switch (step) {
     s.pc = 9; return s.tmp_0;
   case 9:
     r0 = s.retval;
-    s.tmp_0 = ball_initializeEvents__P5463_mk(s);
+    s.tmp_0 = ball_initializeEvents__P43210_mk(s);
     s.pc = 10; return s.tmp_0;
   case 10:
     r0 = s.retval;
@@ -34077,7 +34098,7 @@ switch (step) {
     s.pc = 11; return s.tmp_0;
   case 11:
     r0 = s.retval;
-    s.tmp_0 = football_Game_resetPlayerPositions__P4147_mk(s);
+    s.tmp_0 = football_Game_resetPlayerPositions__P39421_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.pc = 12; return s.tmp_0;
   case 12:
@@ -34090,7 +34111,7 @@ switch (step) {
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_0).fields["palette"] = (s.tmp_1);
-    s.tmp_0 = football_Game_refreshColors__P4144_mk(s);
+    s.tmp_0 = football_Game_refreshColors__P39418_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.pc = 14; return s.tmp_0;
   case 14:
@@ -34099,13 +34120,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-football_Game_constructor__P5796.info = {"start":750,"length":929,"line":22,"column":8,"endLine":47,"endColumn":9,"fileName":"game.ts","functionName":"inline","argumentNames":["this","teamA","teamB","quarterLength"]}
-football_Game_constructor__P5796.info = {"start":750,"length":929,"line":22,"column":8,"endLine":47,"endColumn":9,"fileName":"game.ts","functionName":"inline","argumentNames":["this","teamA","teamB","quarterLength"]}
+football_Game_constructor__P39435.info = {"start":750,"length":929,"line":22,"column":8,"endLine":47,"endColumn":9,"fileName":"game.ts","functionName":"inline","argumentNames":["this","teamA","teamB","quarterLength"]}
+football_Game_constructor__P39435.info = {"start":750,"length":929,"line":22,"column":8,"endLine":47,"endColumn":9,"fileName":"game.ts","functionName":"inline","argumentNames":["this","teamA","teamB","quarterLength"]}
 
-function football_Game_constructor__P5796_mk(s) {
+function football_Game_constructor__P39435_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_Game_constructor__P5796, depth: s.depth + 1,
+        parent: s, fn: football_Game_constructor__P39435, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -34120,7 +34141,7 @@ function football_Game_constructor__P5796_mk(s) {
 
 
 
-function football_Game_refreshColors__P4144(s) {
+function football_Game_refreshColors__P39418(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -34135,11 +34156,11 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, football_Game__C4143_VT)) failedCast(r0);
+    if (!checkSubtype(r0, football_Game__C39417_VT)) failedCast(r0);
     s.tmp_0 = Team_setTeamColors__P4431_mk(s);
     r0 = s.arg0.fields["teamA"];
     s.tmp_0.arg0 = r0;
-    r0 = pxsim_Array__getAt(globals._alternateColors___5794, 0);
+    r0 = pxsim_Array__getAt(globals._alternateColors___39416, 0);
     s.tmp_0.arg1 = r0;
     r0 = s.arg0.fields["palette"];
     s.tmp_0.arg2 = r0;
@@ -34149,7 +34170,7 @@ switch (step) {
     s.tmp_0 = Team_setTeamColors__P4431_mk(s);
     r0 = s.arg0.fields["teamB"];
     s.tmp_0.arg0 = r0;
-    r0 = pxsim_Array__getAt(globals._alternateColors___5794, 1);
+    r0 = pxsim_Array__getAt(globals._alternateColors___39416, 1);
     s.tmp_0.arg1 = r0;
     r0 = s.arg0.fields["palette"];
     s.tmp_0.arg2 = r0;
@@ -34160,13 +34181,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-football_Game_refreshColors__P4144.info = {"start":1689,"length":199,"line":49,"column":8,"endLine":52,"endColumn":9,"fileName":"game.ts","functionName":"refreshColors","argumentNames":["this"]}
-football_Game_refreshColors__P4144.info = {"start":1689,"length":199,"line":49,"column":8,"endLine":52,"endColumn":9,"fileName":"game.ts","functionName":"refreshColors","argumentNames":["this"]}
+football_Game_refreshColors__P39418.info = {"start":1689,"length":199,"line":49,"column":8,"endLine":52,"endColumn":9,"fileName":"game.ts","functionName":"refreshColors","argumentNames":["this"]}
+football_Game_refreshColors__P39418.info = {"start":1689,"length":199,"line":49,"column":8,"endLine":52,"endColumn":9,"fileName":"game.ts","functionName":"refreshColors","argumentNames":["this"]}
 
-function football_Game_refreshColors__P4144_mk(s) {
+function football_Game_refreshColors__P39418_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_Game_refreshColors__P4144, depth: s.depth + 1,
+        parent: s, fn: football_Game_refreshColors__P39418, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -35289,7 +35310,7 @@ function scene_cameraFollowSprite__P1159_mk(s) {
 
 
 
-function ball_initializeEvents__P5463(s) {
+function ball_initializeEvents__P43210(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -35300,19 +35321,19 @@ switch (step) {
   case 0:
 
     s.tmp_0 = game_onUpdate__P1244_mk(s);
-    s.tmp_0.arg0 = inline__P5465;
+    s.tmp_0.arg0 = inline__P43212;
     s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
     s.tmp_0 = game_onUpdate__P1244_mk(s);
-    s.tmp_0.arg0 = inline__P5487;
+    s.tmp_0.arg0 = inline__P43234;
     s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
     s.tmp_0 = sprites_onOverlap__P802_mk(s);
     s.tmp_0.arg0 = globals.Shadow___4078;
     s.tmp_0.arg1 = globals.ThrowTarget___4081;
-    s.tmp_0.arg2 = inline__P5532;
+    s.tmp_0.arg2 = inline__P43279;
     s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
@@ -35320,13 +35341,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-ball_initializeEvents__P5463.info = {"start":5926,"length":3298,"line":187,"column":4,"endLine":262,"endColumn":5,"fileName":"ball.ts","functionName":"initializeEvents","argumentNames":[]}
-ball_initializeEvents__P5463.info = {"start":5926,"length":3298,"line":187,"column":4,"endLine":262,"endColumn":5,"fileName":"ball.ts","functionName":"initializeEvents","argumentNames":[]}
+ball_initializeEvents__P43210.info = {"start":5891,"length":3298,"line":186,"column":4,"endLine":261,"endColumn":5,"fileName":"ball.ts","functionName":"initializeEvents","argumentNames":[]}
+ball_initializeEvents__P43210.info = {"start":5891,"length":3298,"line":186,"column":4,"endLine":261,"endColumn":5,"fileName":"ball.ts","functionName":"initializeEvents","argumentNames":[]}
 
-function ball_initializeEvents__P5463_mk(s) {
+function ball_initializeEvents__P43210_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: ball_initializeEvents__P5463, depth: s.depth + 1,
+        parent: s, fn: ball_initializeEvents__P43210, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
@@ -35335,7 +35356,7 @@ function ball_initializeEvents__P5463_mk(s) {
 
 
 
-function inline__P5465(s) {
+function inline__P43212(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -35345,22 +35366,22 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0)) return null;
 switch (step) {
   case 0:
 
-    s.tmp_0 = r0 = globals.fball___5196;
+    s.tmp_0 = r0 = globals.fball___42946;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (r0) { step = 1; continue; }
     r0 = s.tmp_0;
     { step = 2; continue; }
   case 1:
-    r0 = globals.shadow___5197;
+    r0 = globals.shadow___42947;
   case 2:
     // jmp value (already in r0)
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 3; continue; }
     s.tmp_2 = Sprite_x__P738_mk(s);
-    s.tmp_2.arg0 = globals.fball___5196;
+    s.tmp_2.arg0 = globals.fball___42946;
     s.tmp_3 = Sprite_x__P737_mk(s);
-    s.tmp_3.arg0 = globals.shadow___5197;
+    s.tmp_3.arg0 = globals.shadow___42947;
     s.pc = 6; return s.tmp_3;
   case 6:
     r0 = s.retval;
@@ -35369,28 +35390,28 @@ switch (step) {
   case 5:
     r0 = s.retval;
     s.tmp_0 = Sprite_y__P740_mk(s);
-    s.tmp_0.arg0 = globals.fball___5196;
+    s.tmp_0.arg0 = globals.fball___42946;
     s.tmp_2 = Sprite_y__P739_mk(s);
-    s.tmp_2.arg0 = globals.shadow___5197;
+    s.tmp_2.arg0 = globals.shadow___42947;
     s.pc = 8; return s.tmp_2;
   case 8:
     r0 = s.retval;
     s.tmp_1 = r0;
-    s.tmp_4 = ball_yOffset__P5479_mk(s);
-    s.tmp_4.arg0 = globals.lastXPos___5199;
+    s.tmp_4 = ball_yOffset__P43226_mk(s);
+    s.tmp_4.arg0 = globals.lastXPos___42949;
     s.tmp_5 = Sprite_x__P737_mk(s);
-    s.tmp_5.arg0 = globals.fball___5196;
+    s.tmp_5.arg0 = globals.fball___42946;
     s.pc = 10; return s.tmp_5;
   case 10:
     r0 = s.retval;
     s.tmp_4.arg1 = r0;
     s.tmp_6 = Sprite_x__P737_mk(s);
-    s.tmp_6.arg0 = globals.target___5198;
+    s.tmp_6.arg0 = globals.target___42948;
     s.pc = 11; return s.tmp_6;
   case 11:
     r0 = s.retval;
     s.tmp_4.arg2 = r0;
-    s.tmp_4.arg3 = globals.ballOffsetMagnitude___5200;
+    s.tmp_4.arg3 = globals.ballOffsetMagnitude___42950;
     s.pc = 9; return s.tmp_4;
   case 9:
     r0 = s.retval;
@@ -35406,13 +35427,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P5465.info = {"start":5998,"length":218,"line":189,"column":12,"endLine":194,"endColumn":13,"fileName":"ball.ts","functionName":"inline","argumentNames":[]}
-inline__P5465.info = {"start":5998,"length":218,"line":189,"column":12,"endLine":194,"endColumn":13,"fileName":"ball.ts","functionName":"inline","argumentNames":[]}
+inline__P43212.info = {"start":5963,"length":218,"line":188,"column":12,"endLine":193,"endColumn":13,"fileName":"ball.ts","functionName":"inline","argumentNames":[]}
+inline__P43212.info = {"start":5963,"length":218,"line":188,"column":12,"endLine":193,"endColumn":13,"fileName":"ball.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P5465_mk(s) {
+function inline__P43212_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P5465, depth: s.depth + 1,
+        parent: s, fn: inline__P43212, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -35427,7 +35448,7 @@ function inline__P5465_mk(s) {
 
 
 
-function inline__P5487(s) {
+function inline__P43234(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -35437,49 +35458,49 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0)) return null;
 switch (step) {
   case 0:
 
-    s.currentGame___5489 = undefined;
-    s.offenseDirection___5492 = undefined;
-    s.los___5496 = undefined;
-    r0 = pxsim_numops_toBoolDecr(globals.target___5198);
+    s.currentGame___43236 = undefined;
+    s.offenseDirection___43239 = undefined;
+    s.los___43243 = undefined;
+    r0 = pxsim_numops_toBoolDecr(globals.target___42948);
     if (!r0) { step = 9; continue; }
-    r0 = globals.currentGame___6266;
-    s.currentGame___5489 = (r0);
-    s.tmp_0 = football_Game_offenseDirection__P4155_mk(s);
-    s.tmp_0.arg0 = s.currentGame___5489;
+    r0 = globals.currentGame___39436;
+    s.currentGame___43236 = (r0);
+    s.tmp_0 = football_Game_offenseDirection__P39429_mk(s);
+    s.tmp_0.arg0 = s.currentGame___43236;
     s.pc = 11; return s.tmp_0;
   case 11:
     r0 = s.retval;
-    s.offenseDirection___5492 = (r0);
-    r0 = s.currentGame___5489.fields["lineOfScrimmage"];
-    s.los___5496 = (r0);
-    r0 = (s.offenseDirection___5492 === 1);
+    s.offenseDirection___43239 = (r0);
+    r0 = s.currentGame___43236.fields["lineOfScrimmage"];
+    s.los___43243 = (r0);
+    r0 = (s.offenseDirection___43239 === 1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
     s.tmp_2 = Sprite_x__P737_mk(s);
-    s.tmp_2.arg0 = globals.target___5198;
+    s.tmp_2.arg0 = globals.target___42948;
     s.pc = 12; return s.tmp_2;
   case 12:
     r0 = s.retval;
     s.tmp_1 = r0;
-    r0 = (s.tmp_1 < s.los___5496);
+    r0 = (s.tmp_1 < s.los___43243);
     { step = 2; continue; }
   case 1:
     s.tmp_4 = Sprite_x__P737_mk(s);
-    s.tmp_4.arg0 = globals.target___5198;
+    s.tmp_4.arg0 = globals.target___42948;
     s.pc = 13; return s.tmp_4;
   case 13:
     r0 = s.retval;
     s.tmp_3 = r0;
-    r0 = (s.tmp_3 > s.los___5496);
+    r0 = (s.tmp_3 > s.los___43243);
   case 2:
     // jmp value (already in r0)
     s.tmp_5 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_5);
     if (!r0) { step = 3; continue; }
     s.tmp_6 = Sprite_x__P738_mk(s);
-    s.tmp_6.arg0 = globals.target___5198;
-    r0 = (s.los___5496 + s.offenseDirection___5492);
+    s.tmp_6.arg0 = globals.target___42948;
+    r0 = (s.los___43243 + s.offenseDirection___43239);
     s.tmp_6.arg1 = r0;
     s.pc = 14; return s.tmp_6;
   case 14:
@@ -35487,7 +35508,7 @@ switch (step) {
   case 3:
   case 4:
     s.tmp_2 = Sprite_y__P739_mk(s);
-    s.tmp_2.arg0 = globals.target___5198;
+    s.tmp_2.arg0 = globals.target___42948;
     s.pc = 15; return s.tmp_2;
   case 15:
     r0 = s.retval;
@@ -35500,7 +35521,7 @@ switch (step) {
     { step = 6; continue; }
   case 5:
     s.tmp_4 = Sprite_y__P739_mk(s);
-    s.tmp_4.arg0 = globals.target___5198;
+    s.tmp_4.arg0 = globals.target___42948;
     s.pc = 16; return s.tmp_4;
   case 16:
     r0 = s.retval;
@@ -35512,12 +35533,12 @@ switch (step) {
     r0 = pxsim_numops_toBoolDecr(s.tmp_5);
     if (!r0) { step = 7; continue; }
     s.tmp_6 = Sprite_y__P740_mk(s);
-    s.tmp_6.arg0 = globals.target___5198;
+    s.tmp_6.arg0 = globals.target___42948;
     s.tmp_7 = Math_clamp__P72_mk(s);
     s.tmp_7.arg0 = 16;
     s.tmp_7.arg1 = 112;
     s.tmp_8 = Sprite_y__P739_mk(s);
-    s.tmp_8.arg0 = globals.target___5198;
+    s.tmp_8.arg0 = globals.target___42948;
     s.pc = 19; return s.tmp_8;
   case 19:
     r0 = s.retval;
@@ -35537,13 +35558,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P5487.info = {"start":6264,"length":679,"line":198,"column":12,"endLine":211,"endColumn":13,"fileName":"ball.ts","functionName":"inline","argumentNames":[]}
-inline__P5487.info = {"start":6264,"length":679,"line":198,"column":12,"endLine":211,"endColumn":13,"fileName":"ball.ts","functionName":"inline","argumentNames":[]}
+inline__P43234.info = {"start":6229,"length":679,"line":197,"column":12,"endLine":210,"endColumn":13,"fileName":"ball.ts","functionName":"inline","argumentNames":[]}
+inline__P43234.info = {"start":6229,"length":679,"line":197,"column":12,"endLine":210,"endColumn":13,"fileName":"ball.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P5487_mk(s) {
+function inline__P43234_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P5487, depth: s.depth + 1,
+        parent: s, fn: inline__P43234, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -35554,16 +35575,16 @@ function inline__P5487_mk(s) {
   tmp_6: undefined,
   tmp_7: undefined,
   tmp_8: undefined,
-  currentGame___5489: undefined,
-  offenseDirection___5492: undefined,
-  los___5496: undefined,
+  currentGame___43236: undefined,
+  offenseDirection___43239: undefined,
+  los___43243: undefined,
 } }
 
 
 
 
 
-function inline__P5532(s) {
+function inline__P43279(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -35573,11 +35594,11 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0)) return null;
 switch (step) {
   case 0:
 
-    s.currentGame___5535 = undefined;
-    s.offenseDirection___5538 = undefined;
-    s.heldBy___5542 = undefined;
-    s.pastTarget___5554 = undefined;
-    s.stopPosition___5623 = undefined;
+    s.currentGame___43282 = undefined;
+    s.offenseDirection___43285 = undefined;
+    s.heldBy___43289 = undefined;
+    s.pastTarget___43300 = undefined;
+    s.stopPosition___43368 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -35587,27 +35608,27 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_pxtrt_stlocRef(s.tmp_0, s.arg0);
     s.arg0 = (s.tmp_0);
-    r0 = globals.currentGame___6266;
-    s.currentGame___5535 = (r0);
-    s.tmp_0 = football_Game_offenseDirection__P4155_mk(s);
-    s.tmp_0.arg0 = s.currentGame___5535;
+    r0 = globals.currentGame___39436;
+    s.currentGame___43282 = (r0);
+    s.tmp_0 = football_Game_offenseDirection__P39429_mk(s);
+    s.tmp_0.arg0 = s.currentGame___43282;
     s.pc = 7; return s.tmp_0;
   case 7:
     r0 = s.retval;
-    s.offenseDirection___5538 = (r0);
-    r0 = pxsim_pxtcore_mkAction(1, inline__P5544);
+    s.offenseDirection___43285 = (r0);
+    r0 = pxsim_pxtcore_mkAction(1, inline__P43291);
     s.tmp_0 = r0;
     r0 = pxsim_pxtrt_stclo(s.tmp_0, 0, s.arg0);
     s.tmp_1 = helpers_arrayFind__P61_mk(s);
-    r0 = s.currentGame___5535.fields["teamWithPossession"];
+    r0 = s.currentGame___43282.fields["teamWithPossession"];
     r0 = r0.fields["players"];
     s.tmp_1.arg0 = r0;
     s.tmp_1.arg1 = s.tmp_0;
     s.pc = 8; return s.tmp_1;
   case 8:
     r0 = s.retval;
-    s.heldBy___5542 = (r0);
-    r0 = (s.offenseDirection___5538 === 1);
+    s.heldBy___43289 = (r0);
+    r0 = (s.offenseDirection___43285 === 1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
@@ -35644,19 +35665,19 @@ switch (step) {
   case 2:
     // jmp value (already in r0)
     s.tmp_9 = r0;
-    s.pastTarget___5554 = (s.tmp_9);
-    r0 = pxsim_numops_toBoolDecr(s.heldBy___5542);
+    s.pastTarget___43300 = (s.tmp_9);
+    r0 = pxsim_numops_toBoolDecr(s.heldBy___43289);
     if (!r0) { step = 3; continue; }
     s.tmp_0 = Sprite_destroy__P782_mk(s);
-    s.tmp_0.arg0 = globals.fball___5196;
+    s.tmp_0.arg0 = globals.fball___42946;
     s.tmp_0.arg1 = undefined;
     s.tmp_0.arg2 = undefined;
     s.pc = 13; return s.tmp_0;
   case 13:
     r0 = s.retval;
-    s.tmp_0 = football_Game_playerWhoHasBall__P4146_mk(s);
-    s.tmp_0.arg0 = s.currentGame___5535;
-    s.tmp_0.arg1 = s.heldBy___5542;
+    s.tmp_0 = football_Game_playerWhoHasBall__P39420_mk(s);
+    s.tmp_0.arg0 = s.currentGame___43282;
+    s.tmp_0.arg1 = s.heldBy___43289;
     s.pc = 14; return s.tmp_0;
   case 14:
     r0 = s.retval;
@@ -35682,19 +35703,19 @@ switch (step) {
   case 17:
     r0 = s.retval;
     s.tmp_0 = util_focusCamera__P5242_mk(s);
-    s.tmp_0.arg0 = s.heldBy___5542;
+    s.tmp_0.arg0 = s.heldBy___43289;
     s.pc = 18; return s.tmp_0;
   case 18:
     r0 = s.retval;
-    s.tmp_0 = football_Game_setAI__P4160_mk(s);
-    s.tmp_0.arg0 = s.currentGame___5535;
+    s.tmp_0 = football_Game_setAI__P39434_mk(s);
+    s.tmp_0.arg0 = s.currentGame___43282;
     s.tmp_0.arg1 = true;
     s.pc = 19; return s.tmp_0;
   case 19:
     r0 = s.retval;
     { step = 6; continue; }
   case 3:
-    r0 = pxsim_numops_toBoolDecr(s.pastTarget___5554);
+    r0 = pxsim_numops_toBoolDecr(s.pastTarget___43300);
     if (!r0) { step = 4; continue; }
     s.tmp_0 = Sprite_setFlag__P774_mk(s);
     s.tmp_0.arg0 = s.arg1;
@@ -35719,7 +35740,7 @@ switch (step) {
   case 23:
     r0 = s.retval;
     s.tmp_2 = r0;
-    r0 = (30 * s.offenseDirection___5538);
+    r0 = (30 * s.offenseDirection___43285);
     s.tmp_4 = r0;
     r0 = (s.tmp_2 + s.tmp_4);
     s.tmp_0.arg1 = r0;
@@ -35770,9 +35791,9 @@ switch (step) {
     s.pc = 29; return s.tmp_0;
   case 29:
     r0 = s.retval;
-    globals.lastXPos___5199 = (r0);
-    r0 = (globals.ballOffsetMagnitude___5200 / 3);
-    globals.ballOffsetMagnitude___5200 = (r0);
+    globals.lastXPos___42949 = (r0);
+    r0 = (globals.ballOffsetMagnitude___42950 / 3);
+    globals.ballOffsetMagnitude___42950 = (r0);
     s.tmp_0 = text_util_showInstruction__P3846_mk(s);
     s.tmp_0.arg0 = "MISS!";
     s.tmp_0.arg1 = 1500;
@@ -35784,10 +35805,10 @@ switch (step) {
     s.pc = 31; return s.tmp_0;
   case 31:
     r0 = s.retval;
-    s.stopPosition___5623 = (r0);
-    r0 = pxsim_pxtcore_mkAction(2, inline__P5628);
+    s.stopPosition___43368 = (r0);
+    r0 = pxsim_pxtcore_mkAction(2, inline__P43373);
     s.tmp_0 = r0;
-    r0 = pxsim_pxtrt_stclo(s.tmp_0, 0, s.offenseDirection___5538);
+    r0 = pxsim_pxtrt_stclo(s.tmp_0, 0, s.offenseDirection___43285);
     r0 = pxsim_pxtrt_stclo(s.tmp_0, 1, s.arg1);
     s.tmp_1 = pauseUntil__P228_mk(s);
     s.tmp_1.arg0 = s.tmp_0;
@@ -35795,8 +35816,8 @@ switch (step) {
     s.pc = 32; return s.tmp_1;
   case 32:
     r0 = s.retval;
-    s.tmp_0 = football_Game_stopClock__P4151_mk(s);
-    s.tmp_0.arg0 = s.currentGame___5535;
+    s.tmp_0 = football_Game_stopClock__P39425_mk(s);
+    s.tmp_0.arg0 = s.currentGame___43282;
     s.pc = 33; return s.tmp_0;
   case 33:
     r0 = s.retval;
@@ -35818,7 +35839,7 @@ switch (step) {
     r0 = pxsim_pxtrt_stlocRef(s.arg0, undefined);
     s.tmp_0 = animation_stopAnimation__P1972_mk(s);
     s.tmp_0.arg0 = 1;
-    s.tmp_0.arg1 = globals.fball___5196;
+    s.tmp_0.arg1 = globals.fball___42946;
     s.pc = 36; return s.tmp_0;
   case 36:
     r0 = s.retval;
@@ -35827,8 +35848,8 @@ switch (step) {
     s.pc = 37; return s.tmp_0;
   case 37:
     r0 = s.retval;
-    s.tmp_0 = football_Game_startPlay__P4153_mk(s);
-    s.tmp_0.arg0 = s.currentGame___5535;
+    s.tmp_0 = football_Game_startPlay__P39427_mk(s);
+    s.tmp_0.arg0 = s.currentGame___43282;
     s.pc = 38; return s.tmp_0;
   case 38:
     r0 = s.retval;
@@ -35839,13 +35860,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P5532.info = {"start":7061,"length":2147,"line":217,"column":12,"endLine":260,"endColumn":13,"fileName":"ball.ts","functionName":"inline","argumentNames":["s","os"]}
-inline__P5532.info = {"start":7061,"length":2147,"line":217,"column":12,"endLine":260,"endColumn":13,"fileName":"ball.ts","functionName":"inline","argumentNames":["s","os"]}
+inline__P43279.info = {"start":7026,"length":2147,"line":216,"column":12,"endLine":259,"endColumn":13,"fileName":"ball.ts","functionName":"inline","argumentNames":["s","os"]}
+inline__P43279.info = {"start":7026,"length":2147,"line":216,"column":12,"endLine":259,"endColumn":13,"fileName":"ball.ts","functionName":"inline","argumentNames":["s","os"]}
 
-function inline__P5532_mk(s) {
+function inline__P43279_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P5532, depth: s.depth + 1,
+        parent: s, fn: inline__P43279, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -35857,11 +35878,11 @@ function inline__P5532_mk(s) {
   tmp_7: undefined,
   tmp_8: undefined,
   tmp_9: undefined,
-  currentGame___5535: undefined,
-  offenseDirection___5538: undefined,
-  heldBy___5542: undefined,
-  pastTarget___5554: undefined,
-  stopPosition___5623: undefined,
+  currentGame___43282: undefined,
+  offenseDirection___43285: undefined,
+  heldBy___43289: undefined,
+  pastTarget___43300: undefined,
+  stopPosition___43368: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -35870,7 +35891,7 @@ function inline__P5532_mk(s) {
 
 
 
-function inline__P5544(s) {
+function inline__P43291(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -35894,13 +35915,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P5544.info = {"start":7270,"length":32,"line":220,"column":64,"endLine":220,"endColumn":96,"fileName":"ball.ts","functionName":"inline","argumentNames":["player"]}
-inline__P5544.info = {"start":7270,"length":32,"line":220,"column":64,"endLine":220,"endColumn":96,"fileName":"ball.ts","functionName":"inline","argumentNames":["player"]}
+inline__P43291.info = {"start":7235,"length":32,"line":219,"column":64,"endLine":219,"endColumn":96,"fileName":"ball.ts","functionName":"inline","argumentNames":["player"]}
+inline__P43291.info = {"start":7235,"length":32,"line":219,"column":64,"endLine":219,"endColumn":96,"fileName":"ball.ts","functionName":"inline","argumentNames":["player"]}
 
-function inline__P5544_mk(s) {
+function inline__P43291_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P5544, depth: s.depth + 1,
+        parent: s, fn: inline__P43291, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -35910,7 +35931,7 @@ function inline__P5544_mk(s) {
 
 
 
-function inline__P5628(s) {
+function inline__P43373(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -35925,7 +35946,7 @@ switch (step) {
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
     s.tmp_2 = Sprite_x__P737_mk(s);
-    s.tmp_2.arg0 = globals.fball___5196;
+    s.tmp_2.arg0 = globals.fball___42946;
     s.pc = 3; return s.tmp_2;
   case 3:
     r0 = s.retval;
@@ -35942,7 +35963,7 @@ switch (step) {
     { step = 2; continue; }
   case 1:
     s.tmp_7 = Sprite_x__P737_mk(s);
-    s.tmp_7.arg0 = globals.fball___5196;
+    s.tmp_7.arg0 = globals.fball___42946;
     s.pc = 5; return s.tmp_7;
   case 5:
     r0 = s.retval;
@@ -35963,13 +35984,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P5628.info = {"start":8691,"length":116,"line":248,"column":31,"endLine":249,"endColumn":110,"fileName":"ball.ts","functionName":"inline","argumentNames":[]}
-inline__P5628.info = {"start":8691,"length":116,"line":248,"column":31,"endLine":249,"endColumn":110,"fileName":"ball.ts","functionName":"inline","argumentNames":[]}
+inline__P43373.info = {"start":8656,"length":116,"line":247,"column":31,"endLine":248,"endColumn":110,"fileName":"ball.ts","functionName":"inline","argumentNames":[]}
+inline__P43373.info = {"start":8656,"length":116,"line":247,"column":31,"endLine":248,"endColumn":110,"fileName":"ball.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P5628_mk(s) {
+function inline__P43373_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P5628, depth: s.depth + 1,
+        parent: s, fn: inline__P43373, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -36184,7 +36205,7 @@ function inline__P12757_mk(s) {
 
 
 
-function football_Game_stopClock__P4151(s) {
+function football_Game_stopClock__P39425(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -36199,14 +36220,14 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, football_Game__C4143_VT)) failedCast(r0);
+    if (!checkSubtype(r0, football_Game__C39417_VT)) failedCast(r0);
     s.tmp_0 = GameClock_stop__P4133_mk(s);
     r0 = s.arg0.fields["clock"];
     s.tmp_0.arg0 = r0;
     s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
-    s.tmp_0 = football_Game_setAI__P4160_mk(s);
+    s.tmp_0 = football_Game_setAI__P39434_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.tmp_0.arg1 = false;
     s.pc = 2; return s.tmp_0;
@@ -36219,7 +36240,7 @@ switch (step) {
   case 3:
     r0 = s.retval;
     s.tmp_0 = Team_stop__P4440_mk(s);
-    s.tmp_1 = football_Game_defense__P4149_mk(s);
+    s.tmp_1 = football_Game_defense__P39423_mk(s);
     s.tmp_1.arg0 = s.arg0;
     s.pc = 5; return s.tmp_1;
   case 5:
@@ -36232,13 +36253,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-football_Game_stopClock__P4151.info = {"start":3387,"length":151,"line":103,"column":8,"endLine":108,"endColumn":9,"fileName":"game.ts","functionName":"stopClock","argumentNames":["this"]}
-football_Game_stopClock__P4151.info = {"start":3387,"length":151,"line":103,"column":8,"endLine":108,"endColumn":9,"fileName":"game.ts","functionName":"stopClock","argumentNames":["this"]}
+football_Game_stopClock__P39425.info = {"start":3387,"length":151,"line":103,"column":8,"endLine":108,"endColumn":9,"fileName":"game.ts","functionName":"stopClock","argumentNames":["this"]}
+football_Game_stopClock__P39425.info = {"start":3387,"length":151,"line":103,"column":8,"endLine":108,"endColumn":9,"fileName":"game.ts","functionName":"stopClock","argumentNames":["this"]}
 
-function football_Game_stopClock__P4151_mk(s) {
+function football_Game_stopClock__P39425_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_Game_stopClock__P4151, depth: s.depth + 1,
+        parent: s, fn: football_Game_stopClock__P39425, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -36827,7 +36848,7 @@ function scene_OverlapHandler_constructor__P1100_mk(s) {
 
 
 
-function ball_yOffset__P5479(s) {
+function ball_yOffset__P43226(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -36837,9 +36858,9 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0)) return null;
 switch (step) {
   case 0:
 
-    s.x___5670 = undefined;
-    s.a___5676 = undefined;
-    s.b___5680 = undefined;
+    s.x___43414 = undefined;
+    s.a___43420 = undefined;
+    s.b___43424 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -36856,39 +36877,39 @@ switch (step) {
     s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
-    s.x___5670 = (r0);
+    s.x___43414 = (r0);
     r0 = (0 - s.arg3);
     s.tmp_0 = r0;
     r0 = (s.tmp_0 / 2500);
-    s.a___5676 = (r0);
+    s.a___43420 = (r0);
     r0 = (s.arg3 / 25);
-    s.b___5680 = (r0);
-    s.tmp_1 = r0 = s.a___5676;
-    r0 = pxsim.Math_.pow(s.x___5670, 2);
+    s.b___43424 = (r0);
+    s.tmp_1 = r0 = s.a___43420;
+    r0 = pxsim.Math_.pow(s.x___43414, 2);
     s.tmp_2 = r0;
     r0 = (s.tmp_1 * s.tmp_2);
     s.tmp_0 = r0;
-    r0 = (s.b___5680 * s.x___5670);
+    r0 = (s.b___43424 * s.x___43414);
     s.tmp_3 = r0;
     r0 = (s.tmp_0 + s.tmp_3);
     return leave(s, r0)
   default: oops()
 } } }
-ball_yOffset__P5479.info = {"start":9447,"length":502,"line":270,"column":4,"endLine":280,"endColumn":5,"fileName":"ball.ts","functionName":"yOffset","argumentNames":["start","curr","end","maxDisplacement"]}
-ball_yOffset__P5479.info = {"start":9447,"length":502,"line":270,"column":4,"endLine":280,"endColumn":5,"fileName":"ball.ts","functionName":"yOffset","argumentNames":["start","curr","end","maxDisplacement"]}
+ball_yOffset__P43226.info = {"start":9412,"length":502,"line":269,"column":4,"endLine":279,"endColumn":5,"fileName":"ball.ts","functionName":"yOffset","argumentNames":["start","curr","end","maxDisplacement"]}
+ball_yOffset__P43226.info = {"start":9412,"length":502,"line":269,"column":4,"endLine":279,"endColumn":5,"fileName":"ball.ts","functionName":"yOffset","argumentNames":["start","curr","end","maxDisplacement"]}
 
-function ball_yOffset__P5479_mk(s) {
+function ball_yOffset__P43226_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: ball_yOffset__P5479, depth: s.depth + 1,
+        parent: s, fn: ball_yOffset__P43226, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
   tmp_3: undefined,
-  x___5670: undefined,
-  a___5676: undefined,
-  b___5680: undefined,
+  x___43414: undefined,
+  a___43420: undefined,
+  b___43424: undefined,
   arg0: undefined,
   arg1: undefined,
   arg2: undefined,
@@ -37007,7 +37028,7 @@ switch (step) {
   case 0:
 
     s.currentGame___4522 = undefined;
-    r0 = globals.currentGame___6266;
+    r0 = globals.currentGame___39436;
     s.currentGame___4522 = (r0);
     s.tmp_0 = helpers_arrayForEach__P59_mk(s);
     r0 = s.currentGame___4522.fields["teamWithPossession"];
@@ -37018,7 +37039,7 @@ switch (step) {
   case 1:
     r0 = s.retval;
     s.tmp_0 = helpers_arrayForEach__P59_mk(s);
-    s.tmp_1 = football_Game_defense__P4149_mk(s);
+    s.tmp_1 = football_Game_defense__P39423_mk(s);
     s.tmp_1.arg0 = s.currentGame___4522;
     s.pc = 3; return s.tmp_1;
   case 3:
@@ -37067,13 +37088,13 @@ switch (step) {
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
-    r0 = globals.currentGame___6266;
+    r0 = globals.currentGame___39436;
     s.currentGame___4542 = (r0);
     r0 = s.currentGame___4542.fields["aiOn"];
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
-    s.tmp_1 = football_Game_offenseDirection__P4155_mk(s);
+    s.tmp_1 = football_Game_offenseDirection__P39429_mk(s);
     s.tmp_1.arg0 = s.currentGame___4542;
     s.pc = 5; return s.tmp_1;
   case 5:
@@ -37209,7 +37230,7 @@ switch (step) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
-    r0 = globals.currentGame___6266;
+    r0 = globals.currentGame___39436;
     s.currentGame___4469 = (r0);
     s.tmp_0 = r0 = s.arg0;
     r0 = s.currentGame___4469.fields["playerWithPossession"];
@@ -37308,7 +37329,7 @@ switch (step) {
     s.pc = 21; return s.tmp_6;
   case 21:
     r0 = s.retval;
-    r0 = globals._hardMode___5791;
+    r0 = globals._hardMode___39413;
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (r0) { step = 9; continue; }
@@ -37321,7 +37342,7 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 11; continue; }
-    s.tmp_2 = football_Game_ballStopped__P4154_mk(s);
+    s.tmp_2 = football_Game_ballStopped__P39428_mk(s);
     s.tmp_2.arg0 = s.currentGame___4469;
     s.tmp_2.arg1 = "OUT OF BOUNDS!";
     s.pc = 24; return s.tmp_2;
@@ -37362,7 +37383,7 @@ function player_updatePlayerState__P4467_mk(s) {
 
 
 
-function football_Game_ballStopped__P4154(s) {
+function football_Game_ballStopped__P39428(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -37378,7 +37399,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, football_Game__C4143_VT)) failedCast(r0);
+    if (!checkSubtype(r0, football_Game__C39417_VT)) failedCast(r0);
     r0 = s.arg0.fields["playerWithPossession"];
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
@@ -37405,12 +37426,12 @@ switch (step) {
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_0).fields["lineOfScrimmage"] = (s.tmp_1);
-    s.tmp_0 = football_Game_stopClock__P4151_mk(s);
+    s.tmp_0 = football_Game_stopClock__P39425_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.pc = 6; return s.tmp_0;
   case 6:
     r0 = s.retval;
-    r0 = pxsim_pxtcore_mkAction(1, inline__P6025);
+    r0 = pxsim_pxtcore_mkAction(1, inline__P39929);
     s.tmp_0 = r0;
     r0 = pxsim_pxtrt_stclo(s.tmp_0, 0, s.arg0);
     r0 = pxsim.control.runInParallel(s.tmp_0);
@@ -37420,13 +37441,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-football_Game_ballStopped__P4154.info = {"start":4627,"length":538,"line":149,"column":8,"endLine":163,"endColumn":9,"fileName":"game.ts","functionName":"ballStopped","argumentNames":["this","reason"]}
-football_Game_ballStopped__P4154.info = {"start":4627,"length":538,"line":149,"column":8,"endLine":163,"endColumn":9,"fileName":"game.ts","functionName":"ballStopped","argumentNames":["this","reason"]}
+football_Game_ballStopped__P39428.info = {"start":4627,"length":538,"line":149,"column":8,"endLine":163,"endColumn":9,"fileName":"game.ts","functionName":"ballStopped","argumentNames":["this","reason"]}
+football_Game_ballStopped__P39428.info = {"start":4627,"length":538,"line":149,"column":8,"endLine":163,"endColumn":9,"fileName":"game.ts","functionName":"ballStopped","argumentNames":["this","reason"]}
 
-function football_Game_ballStopped__P4154_mk(s) {
+function football_Game_ballStopped__P39428_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_Game_ballStopped__P4154, depth: s.depth + 1,
+        parent: s, fn: football_Game_ballStopped__P39428, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -37440,7 +37461,7 @@ function football_Game_ballStopped__P4154_mk(s) {
 
 
 
-function inline__P6025(s) {
+function inline__P39929(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -37455,7 +37476,7 @@ switch (step) {
     s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
-    s.tmp_0 = football_Game_startPlay__P4153_mk(s);
+    s.tmp_0 = football_Game_startPlay__P39427_mk(s);
     s.tmp_0.arg0 = s.caps[0];
     s.pc = 2; return s.tmp_0;
   case 2:
@@ -37464,13 +37485,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P6025.info = {"start":5044,"length":95,"line":158,"column":38,"endLine":161,"endColumn":17,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
-inline__P6025.info = {"start":5044,"length":95,"line":158,"column":38,"endLine":161,"endColumn":17,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
+inline__P39929.info = {"start":5044,"length":95,"line":158,"column":38,"endLine":161,"endColumn":17,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
+inline__P39929.info = {"start":5044,"length":95,"line":158,"column":38,"endLine":161,"endColumn":17,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P6025_mk(s) {
+function inline__P39929_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P6025, depth: s.depth + 1,
+        parent: s, fn: inline__P39929, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
@@ -39295,7 +39316,7 @@ function tiles_legacy_LegacyTilemap_setMap__P2109_mk(s) {
 
 
 
-function football_Game_initializeEvents__P4159(s) {
+function football_Game_initializeEvents__P39433(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -39310,8 +39331,8 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, football_Game__C4143_VT)) failedCast(r0);
-    r0 = pxsim_pxtcore_mkAction(1, inline__P6094);
+    if (!checkSubtype(r0, football_Game__C39417_VT)) failedCast(r0);
+    r0 = pxsim_pxtcore_mkAction(1, inline__P39934);
     s.tmp_0 = r0;
     r0 = pxsim_pxtrt_stclo(s.tmp_0, 0, s.arg0);
     s.tmp_1 = game_onUpdate__P1244_mk(s);
@@ -39319,7 +39340,7 @@ switch (step) {
     s.pc = 1; return s.tmp_1;
   case 1:
     r0 = s.retval;
-    r0 = pxsim_pxtcore_mkAction(1, inline__P6119);
+    r0 = pxsim_pxtcore_mkAction(1, inline__P39958);
     s.tmp_0 = r0;
     r0 = pxsim_pxtrt_stclo(s.tmp_0, 0, s.arg0);
     s.tmp_1 = game_onUpdate__P1244_mk(s);
@@ -39331,13 +39352,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-football_Game_initializeEvents__P4159.info = {"start":6658,"length":2074,"line":205,"column":8,"endLine":254,"endColumn":9,"fileName":"game.ts","functionName":"initializeEvents","argumentNames":["this"]}
-football_Game_initializeEvents__P4159.info = {"start":6658,"length":2074,"line":205,"column":8,"endLine":254,"endColumn":9,"fileName":"game.ts","functionName":"initializeEvents","argumentNames":["this"]}
+football_Game_initializeEvents__P39433.info = {"start":6658,"length":2074,"line":205,"column":8,"endLine":254,"endColumn":9,"fileName":"game.ts","functionName":"initializeEvents","argumentNames":["this"]}
+football_Game_initializeEvents__P39433.info = {"start":6658,"length":2074,"line":205,"column":8,"endLine":254,"endColumn":9,"fileName":"game.ts","functionName":"initializeEvents","argumentNames":["this"]}
 
-function football_Game_initializeEvents__P4159_mk(s) {
+function football_Game_initializeEvents__P39433_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_Game_initializeEvents__P4159, depth: s.depth + 1,
+        parent: s, fn: football_Game_initializeEvents__P39433, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -39348,7 +39369,7 @@ function football_Game_initializeEvents__P4159_mk(s) {
 
 
 
-function inline__P6094(s) {
+function inline__P39934(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -39371,15 +39392,15 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 5; continue; }
-    r0 = pxsim_pxtcore_mkAction(1, inline__P6104);
+    r0 = pxsim_pxtcore_mkAction(1, inline__P39943);
     s.tmp_2 = r0;
     r0 = pxsim_pxtrt_stclo(s.tmp_2, 0, s.caps[0]);
-    r0 = pxsim_pxtcore_mkAction(1, inline__P6109);
+    r0 = pxsim_pxtcore_mkAction(1, inline__P39948);
     s.tmp_3 = r0;
     r0 = pxsim_pxtrt_stclo(s.tmp_3, 0, s.caps[0]);
     s.tmp_4 = helpers_arrayForEach__P59_mk(s);
     s.tmp_5 = helpers_arrayFilter__P60_mk(s);
-    s.tmp_6 = football_Game_defense__P4149_mk(s);
+    s.tmp_6 = football_Game_defense__P39423_mk(s);
     s.tmp_6.arg0 = s.caps[0];
     s.pc = 9; return s.tmp_6;
   case 9:
@@ -39401,7 +39422,7 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 3; continue; }
-    s.tmp_2 = football_Game_ballStopped__P4154_mk(s);
+    s.tmp_2 = football_Game_ballStopped__P39428_mk(s);
     s.tmp_2.arg0 = s.caps[0];
     s.tmp_2.arg1 = "TACKLED!";
     s.pc = 10; return s.tmp_2;
@@ -39415,13 +39436,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P6094.info = {"start":6705,"length":457,"line":206,"column":26,"endLine":217,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
-inline__P6094.info = {"start":6705,"length":457,"line":206,"column":26,"endLine":217,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
+inline__P39934.info = {"start":6705,"length":457,"line":206,"column":26,"endLine":217,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
+inline__P39934.info = {"start":6705,"length":457,"line":206,"column":26,"endLine":217,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P6094_mk(s) {
+function inline__P39934_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P6094, depth: s.depth + 1,
+        parent: s, fn: inline__P39934, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -39436,7 +39457,7 @@ function inline__P6094_mk(s) {
 
 
 
-function inline__P6104(s) {
+function inline__P39943(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -39460,13 +39481,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P6104.info = {"start":6844,"length":42,"line":209,"column":32,"endLine":209,"endColumn":74,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
-inline__P6104.info = {"start":6844,"length":42,"line":209,"column":32,"endLine":209,"endColumn":74,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
+inline__P39943.info = {"start":6844,"length":42,"line":209,"column":32,"endLine":209,"endColumn":74,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
+inline__P39943.info = {"start":6844,"length":42,"line":209,"column":32,"endLine":209,"endColumn":74,"fileName":"game.ts","functionName":"inline","argumentNames":["p"]}
 
-function inline__P6104_mk(s) {
+function inline__P39943_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P6104, depth: s.depth + 1,
+        parent: s, fn: inline__P39943, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -39476,7 +39497,7 @@ function inline__P6104_mk(s) {
 
 
 
-function inline__P6109(s) {
+function inline__P39948(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -39496,13 +39517,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P6109.info = {"start":6921,"length":82,"line":210,"column":33,"endLine":212,"endColumn":25,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
-inline__P6109.info = {"start":6921,"length":82,"line":210,"column":33,"endLine":212,"endColumn":25,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
+inline__P39948.info = {"start":6921,"length":82,"line":210,"column":33,"endLine":212,"endColumn":25,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
+inline__P39948.info = {"start":6921,"length":82,"line":210,"column":33,"endLine":212,"endColumn":25,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P6109_mk(s) {
+function inline__P39948_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P6109, depth: s.depth + 1,
+        parent: s, fn: inline__P39948, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -39513,7 +39534,7 @@ function inline__P6109_mk(s) {
 
 
 
-function inline__P6119(s) {
+function inline__P39958(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -39523,8 +39544,8 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0)) return null;
 switch (step) {
   case 0:
 
-    s.offenseDirection___6170 = undefined;
-    r0 = pxsim_pxtcore_mkAction(1, inline__P6123);
+    s.offenseDirection___40009 = undefined;
+    r0 = pxsim_pxtcore_mkAction(1, inline__P39962);
     s.tmp_0 = r0;
     r0 = pxsim_pxtrt_stclo(s.tmp_0, 0, s.caps[0]);
     s.tmp_1 = helpers_arrayForEach__P59_mk(s);
@@ -39535,17 +39556,17 @@ switch (step) {
     s.pc = 9; return s.tmp_1;
   case 9:
     r0 = s.retval;
-    s.tmp_0 = football_Game_offenseDirection__P4155_mk(s);
+    s.tmp_0 = football_Game_offenseDirection__P39429_mk(s);
     s.tmp_0.arg0 = s.caps[0];
     s.pc = 10; return s.tmp_0;
   case 10:
     r0 = s.retval;
-    s.offenseDirection___6170 = (r0);
+    s.offenseDirection___40009 = (r0);
     r0 = s.caps[0].fields["playerWithPossession"];
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 7; continue; }
-    r0 = (s.offenseDirection___6170 === 1);
+    r0 = (s.offenseDirection___40009 === 1);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_1);
     if (!r0) { step = 3; continue; }
@@ -39560,7 +39581,7 @@ switch (step) {
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
     if (!r0) { step = 1; continue; }
-    s.tmp_5 = football_Game_touchdown__P4158_mk(s);
+    s.tmp_5 = football_Game_touchdown__P39432_mk(s);
     s.tmp_5.arg0 = s.caps[0];
     s.pc = 12; return s.tmp_5;
   case 12:
@@ -39580,7 +39601,7 @@ switch (step) {
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 4; continue; }
-    s.tmp_3 = football_Game_touchdown__P4158_mk(s);
+    s.tmp_3 = football_Game_touchdown__P39432_mk(s);
     s.tmp_3.arg0 = s.caps[0];
     s.pc = 14; return s.tmp_3;
   case 14:
@@ -39594,13 +39615,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P6119.info = {"start":7192,"length":1528,"line":219,"column":26,"endLine":253,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
-inline__P6119.info = {"start":7192,"length":1528,"line":219,"column":26,"endLine":253,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
+inline__P39958.info = {"start":7192,"length":1528,"line":219,"column":26,"endLine":253,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
+inline__P39958.info = {"start":7192,"length":1528,"line":219,"column":26,"endLine":253,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P6119_mk(s) {
+function inline__P39958_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P6119, depth: s.depth + 1,
+        parent: s, fn: inline__P39958, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -39608,14 +39629,14 @@ function inline__P6119_mk(s) {
   tmp_3: undefined,
   tmp_4: undefined,
   tmp_5: undefined,
-  offenseDirection___6170: undefined,
+  offenseDirection___40009: undefined,
 } }
 
 
 
 
 
-function inline__P6123(s) {
+function inline__P39962(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -39625,7 +39646,7 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0)) return null;
 switch (step) {
   case 0:
 
-    s.t___6134 = undefined;
+    s.t___39973 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
@@ -39659,9 +39680,9 @@ switch (step) {
     { step = 15; continue; }
   case 3:
   case 4:
-    r0 = globals.target___5198;
-    s.t___6134 = (r0);
-    s.tmp_0 = r0 = s.t___6134;
+    r0 = globals.target___42948;
+    s.t___39973 = (r0);
+    s.tmp_0 = r0 = s.t___39973;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (r0) { step = 5; continue; }
     r0 = s.tmp_0;
@@ -39704,7 +39725,7 @@ switch (step) {
     r0 = pxsim_pxtrt.mapSetGeneric(s.tmp_10, globals.IS_CHASING_BALL___4095, true);
     s.tmp_0 = Sprite_follow__P784_mk(s);
     s.tmp_0.arg0 = s.arg0;
-    s.tmp_0.arg1 = s.t___6134;
+    s.tmp_0.arg1 = s.t___39973;
     s.tmp_0.arg2 = 100;
     s.tmp_0.arg3 = 400;
     s.pc = 20; return s.tmp_0;
@@ -39763,13 +39784,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P6123.info = {"start":7245,"length":874,"line":220,"column":45,"endLine":237,"endColumn":17,"fileName":"game.ts","functionName":"inline","argumentNames":["p","index"]}
-inline__P6123.info = {"start":7245,"length":874,"line":220,"column":45,"endLine":237,"endColumn":17,"fileName":"game.ts","functionName":"inline","argumentNames":["p","index"]}
+inline__P39962.info = {"start":7245,"length":874,"line":220,"column":45,"endLine":237,"endColumn":17,"fileName":"game.ts","functionName":"inline","argumentNames":["p","index"]}
+inline__P39962.info = {"start":7245,"length":874,"line":220,"column":45,"endLine":237,"endColumn":17,"fileName":"game.ts","functionName":"inline","argumentNames":["p","index"]}
 
-function inline__P6123_mk(s) {
+function inline__P39962_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P6123, depth: s.depth + 1,
+        parent: s, fn: inline__P39962, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -39783,7 +39804,7 @@ function inline__P6123_mk(s) {
   tmp_9: undefined,
   tmp_10: undefined,
   tmp_11: undefined,
-  t___6134: undefined,
+  t___39973: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -39792,7 +39813,7 @@ function inline__P6123_mk(s) {
 
 
 
-function football_Game_touchdown__P4158(s) {
+function football_Game_touchdown__P39432(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -39807,8 +39828,8 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, football_Game__C4143_VT)) failedCast(r0);
-    s.tmp_0 = football_Game_playerWhoHasBall__P4146_mk(s);
+    if (!checkSubtype(r0, football_Game__C39417_VT)) failedCast(r0);
+    s.tmp_0 = football_Game_playerWhoHasBall__P39420_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.tmp_0.arg1 = undefined;
     s.pc = 1; return s.tmp_0;
@@ -39820,7 +39841,7 @@ switch (step) {
     s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
-    s.tmp_0 = football_Game_stopClock__P4151_mk(s);
+    s.tmp_0 = football_Game_stopClock__P39425_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.pc = 3; return s.tmp_0;
   case 3:
@@ -39838,7 +39859,7 @@ switch (step) {
     s.pc = 4; return s.tmp_0;
   case 4:
     r0 = s.retval;
-    r0 = pxsim_pxtcore_mkAction(1, inline__P6085);
+    r0 = pxsim_pxtcore_mkAction(1, inline__P40042);
     s.tmp_0 = r0;
     r0 = pxsim_pxtrt_stclo(s.tmp_0, 0, s.arg0);
     r0 = pxsim.control.runInParallel(s.tmp_0);
@@ -39846,13 +39867,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-football_Game_touchdown__P4158.info = {"start":6202,"length":446,"line":190,"column":8,"endLine":203,"endColumn":9,"fileName":"game.ts","functionName":"touchdown","argumentNames":["this"]}
-football_Game_touchdown__P4158.info = {"start":6202,"length":446,"line":190,"column":8,"endLine":203,"endColumn":9,"fileName":"game.ts","functionName":"touchdown","argumentNames":["this"]}
+football_Game_touchdown__P39432.info = {"start":6202,"length":446,"line":190,"column":8,"endLine":203,"endColumn":9,"fileName":"game.ts","functionName":"touchdown","argumentNames":["this"]}
+football_Game_touchdown__P39432.info = {"start":6202,"length":446,"line":190,"column":8,"endLine":203,"endColumn":9,"fileName":"game.ts","functionName":"touchdown","argumentNames":["this"]}
 
-function football_Game_touchdown__P4158_mk(s) {
+function football_Game_touchdown__P39432_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: football_Game_touchdown__P4158, depth: s.depth + 1,
+        parent: s, fn: football_Game_touchdown__P39432, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -39864,7 +39885,7 @@ function football_Game_touchdown__P4158_mk(s) {
 
 
 
-function inline__P6085(s) {
+function inline__P40042(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -39886,12 +39907,12 @@ switch (step) {
     s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
-    s.tmp_0 = football_Game_turnOver__P4157_mk(s);
+    s.tmp_0 = football_Game_turnOver__P39431_mk(s);
     s.tmp_0.arg0 = s.caps[0];
     s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
-    s.tmp_0 = football_Game_startPlay__P4153_mk(s);
+    s.tmp_0 = football_Game_startPlay__P39427_mk(s);
     s.tmp_0.arg0 = s.caps[0];
     s.pc = 4; return s.tmp_0;
   case 4:
@@ -39900,13 +39921,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P6085.info = {"start":6461,"length":175,"line":197,"column":34,"endLine":202,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
-inline__P6085.info = {"start":6461,"length":175,"line":197,"column":34,"endLine":202,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
+inline__P40042.info = {"start":6461,"length":175,"line":197,"column":34,"endLine":202,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
+inline__P40042.info = {"start":6461,"length":175,"line":197,"column":34,"endLine":202,"endColumn":13,"fileName":"game.ts","functionName":"inline","argumentNames":[]}
 
-function inline__P6085_mk(s) {
+function inline__P40042_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P6085, depth: s.depth + 1,
+        parent: s, fn: inline__P40042, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
@@ -40146,7 +40167,7 @@ function effects_SceneAnchor_constructor__P1795_mk(s) {
 
 
 
-function ball_getActiveTarget__P5664(s) {
+function ball_getActiveTarget__P43408(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -40156,17 +40177,17 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0)) return null;
 switch (step) {
   case 0:
 
-    r0 = globals.target___5198;
+    r0 = globals.target___42948;
     return leave(s, r0)
   default: oops()
 } } }
-ball_getActiveTarget__P5664.info = {"start":9230,"length":64,"line":264,"column":4,"endLine":266,"endColumn":5,"fileName":"ball.ts","functionName":"getActiveTarget","argumentNames":[]}
-ball_getActiveTarget__P5664.info = {"start":9230,"length":64,"line":264,"column":4,"endLine":266,"endColumn":5,"fileName":"ball.ts","functionName":"getActiveTarget","argumentNames":[]}
+ball_getActiveTarget__P43408.info = {"start":9195,"length":64,"line":263,"column":4,"endLine":265,"endColumn":5,"fileName":"ball.ts","functionName":"getActiveTarget","argumentNames":[]}
+ball_getActiveTarget__P43408.info = {"start":9195,"length":64,"line":263,"column":4,"endLine":265,"endColumn":5,"fileName":"ball.ts","functionName":"getActiveTarget","argumentNames":[]}
 
-function ball_getActiveTarget__P5664_mk(s) {
+function ball_getActiveTarget__P43408_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: ball_getActiveTarget__P5664, depth: s.depth + 1,
+        parent: s, fn: ball_getActiveTarget__P43408, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
 } }
 
@@ -40729,7 +40750,7 @@ switch (step) {
     { step = 2; continue; }
   case 1:
     s.tmp_2 = Team_activePlayer__P4197_mk(s);
-    s.tmp_3 = football_Game_defense__P4149_mk(s);
+    s.tmp_3 = football_Game_defense__P39423_mk(s);
     s.tmp_3.arg0 = s.caps[0];
     s.pc = 14; return s.tmp_3;
   case 14:
@@ -62918,7 +62939,7 @@ const TeamData__C4744_VT = mkVTable({
     "set/colorTwo": null,
   },
 });
-const football_Game__C4143_VT = mkVTable({
+const football_Game__C39417_VT = mkVTable({
   name: "Game",
   numFields: 13,
   classNo: 21,
@@ -62953,23 +62974,23 @@ const football_Game__C4143_VT = mkVTable({
     "set/teamA": null,
     "teamB": null,
     "set/teamB": null,
-    "refreshColors": football_Game_refreshColors__P4144,
-    "playerWhoHasBall": football_Game_playerWhoHasBall__P4145,
-    "set/playerWhoHasBall": football_Game_playerWhoHasBall__P4146,
-    "resetPlayerPositions": football_Game_resetPlayerPositions__P4147,
-    "offense": football_Game_offense__P4148,
-    "defense": football_Game_defense__P4149,
-    "playIsActive": football_Game_playIsActive__P4150,
-    "stopClock": football_Game_stopClock__P4151,
-    "startClock": football_Game_startClock__P4152,
-    "startPlay": football_Game_startPlay__P4153,
-    "ballStopped": football_Game_ballStopped__P4154,
-    "offenseDirection": football_Game_offenseDirection__P4155,
-    "defenseDirection": football_Game_defenseDirection__P4156,
-    "turnOver": football_Game_turnOver__P4157,
-    "touchdown": football_Game_touchdown__P4158,
-    "initializeEvents": football_Game_initializeEvents__P4159,
-    "setAI": football_Game_setAI__P4160,
+    "refreshColors": football_Game_refreshColors__P39418,
+    "playerWhoHasBall": football_Game_playerWhoHasBall__P39419,
+    "set/playerWhoHasBall": football_Game_playerWhoHasBall__P39420,
+    "resetPlayerPositions": football_Game_resetPlayerPositions__P39421,
+    "offense": football_Game_offense__P39422,
+    "defense": football_Game_defense__P39423,
+    "playIsActive": football_Game_playIsActive__P39424,
+    "stopClock": football_Game_stopClock__P39425,
+    "startClock": football_Game_startClock__P39426,
+    "startPlay": football_Game_startPlay__P39427,
+    "ballStopped": football_Game_ballStopped__P39428,
+    "offenseDirection": football_Game_offenseDirection__P39429,
+    "defenseDirection": football_Game_defenseDirection__P39430,
+    "turnOver": football_Game_turnOver__P39431,
+    "touchdown": football_Game_touchdown__P39432,
+    "initializeEvents": football_Game_initializeEvents__P39433,
+    "setAI": football_Game_setAI__P39434,
   },
 });
 const Team__C4430_VT = mkVTable({
@@ -64793,7 +64814,7 @@ const animation_PathNode__C1931_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["Ball___4075","Shadow___4078","ThrowTarget___4081","Logo___4084","PlayerTeam___4087","OpposingTeam___4090","FieldGoal___4093","clevelandBrowns___6374","pittsburghSteelers___6431","currentGame___6266","target___5198","shadow___5197","lastXPos___5199","fball___5196","ballOffsetMagnitude___5200","IS_CHASING_BALL___4095","_hardMode___5791","focusedSprite___6449","renderable___3845","_alternateColors___5794","focusedPosition___6448","focuser___6450"])
+const breakpoints = setupDebugger(1, ["Ball___4075","Shadow___4078","ThrowTarget___4081","Logo___4084","PlayerTeam___4087","OpposingTeam___4090","FieldGoal___4093","clevelandBrowns___6374","pittsburghSteelers___6431","currentGame___39436","target___42948","shadow___42947","lastXPos___42949","fball___42946","ballOffsetMagnitude___42950","IS_CHASING_BALL___4095","_hardMode___39413","focusedSprite___6449","renderable___3845","_alternateColors___39416","focusedPosition___6448","focuser___6450"])
 
-return _main___P24652
+return _main___P44475
 })
