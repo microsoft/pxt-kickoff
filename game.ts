@@ -67,9 +67,9 @@ namespace football {
                 this.playerEnergy = 3;
             }
             
-            if (this.offense.isPlayerControlled() && this.offense.activePlayer() !== s) {
+            if (this.offense.isPlayerControlled() && this.offense.activePlayer !== s) {
                 // shuffle control to player with ball
-                while (this.offense.activePlayer() !== s) {
+                while (this.offense.activePlayer !== s) {
                     this.offense.controlNextPlayer();
                 }
                 s.vx = 60 * this.offenseDirection();
