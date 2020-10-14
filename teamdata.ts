@@ -102,6 +102,6 @@ namespace league {
     //% fixedInstance whenUsed block="Tennessee Titans"
     export const tennesseeTitans = new TeamData("Tennessee Titans", "TEN", 0x0C2340, 0x418FDE);
 
-    //% fixedInstance whenUsed block="Washington Redskins"
-    export const washingtonRedskins = new TeamData("Washington Redskins", "WAS", 0x773141, 0xFFB612);
+    //% fixedInstance whenUsed block="Washington Football Team"
+    export const washingtonRedskins = new TeamData("Washington Football Team", "WAS", 0x773141, 0xFFB612);
 }
